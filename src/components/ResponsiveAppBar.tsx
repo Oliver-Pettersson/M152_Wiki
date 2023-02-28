@@ -18,7 +18,7 @@ const pages = [{
     title: 'Videos',
     href: '/videos',
 }, {
-    title: 'About Us',
+    title: 'AboutPage Us',
     href: '/about',
 }, {
     title: 'Software Library',
@@ -31,7 +31,7 @@ const pages = [{
 function ResponsiveAppBar() {
     const theme = useTheme()
     const colorMode = React.useContext(ColorModeContext)
-
+    
     const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
     const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
 
