@@ -4,7 +4,8 @@ import {Box, createTheme, ThemeProvider} from '@mui/material'
 import App from './App'
 
 export const ColorModeContext = React.createContext({
-    toggleColorMode: () => {}
+    toggleColorMode: () => {
+    }
 })
 
 function StyledApp() {
