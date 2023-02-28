@@ -1,17 +1,22 @@
+import { Typography } from "@mui/material";
 import { Container } from "@mui/material";
 
 import React from 'react'
-import StoryBoardItem from "../components/StoryBoardItem";
+import StoryBoardItem from "../StoryBoardItem";
 
 function VideoDetail() {
     return (
         <>
-            <Container className="flex-1 bg-orange-400 w-full overflow-y-scroll">
+            <Container className="flex-1 bg-orange-400 w-full m-4">
                 <Container className="bg-green-400">
-                    <p>Title</p>
+                    <Typography variant="h1">Docker leicht gemacht</Typography>
                 </Container>
-                <Container className="bg-blue-400">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sed provident inventore ipsa sapiente quos, officiis molestias temporibus exercitationem ipsam.</p>
+                <Container className="bg-blue-400 m-2">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sed provident inventore ipsa sapiente quos, officiis molestias temporibus exercitationem ipsam.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus doloribus itaque, nihil reiciendis in ea culpa aliquid! Commodi, natus quam.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sed provident inventore ipsa sapiente quos, officiis molestias temporibus exercitationem ipsam.
+                    </p>
                 </Container>
                 <div className="main-content flex-row">
                     <iframe
@@ -23,13 +28,15 @@ function VideoDetail() {
                         allowFullScreen
                         title="Embedded youtube"
                     />
-                    <p>
+                    <Typography>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nobis quo mollitia, laboriosam nostrum fuga amet consequuntur? Ab, aspernatur eveniet!
-                    </p>
+                    </Typography>
                 </div>
                 {/* Story boards below  */}
                 <hr></hr>
                 <div>
+                    <StoryBoardItem left={true}/>
+                    <StoryBoardItem left={false}/>
                     <StoryBoardItem left={true}/>
                 </div>
             </Container>
