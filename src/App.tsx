@@ -8,16 +8,16 @@ import VideoPage from "./components/pages/VideoPage/VideoPage";
 
 function App() {
   return (
-    <div className="overflow-x-hidden w-full">
-      <Container className="pt-12">
+    <div className="overflow-x-hidden h-full w-full">
         <BrowserRouter>
         <ResponsiveAppBar />
+        <Container className="pt-12">
           <Routes>
             <Route path="/*" element={<VideoPage />} />
             <Route path="/about" element={<AboutPage />} />
           </Routes>
+          </Container>
         </BrowserRouter>
-      </Container>
     </div>
   );
 }
