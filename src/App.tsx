@@ -1,7 +1,7 @@
 import './App.css'
 import React from 'react'
 import ResponsiveAppBar from "./components/ResponsiveAppBar";
-import {Container, Typography} from "@mui/material";
+import {Container} from "@mui/material";
 
 function App() {
     return (
