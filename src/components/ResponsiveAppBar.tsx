@@ -13,6 +13,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 import {BsFillMoonStarsFill, BsSun} from "react-icons/all";
 import {ColorModeContext} from "../StyledApp";
 import {useTheme} from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 const pages = [{
     title: 'Videos',
@@ -50,6 +51,8 @@ function ResponsiveAppBar() {
         setAnchorElUser(null);
     };
 
+    const navigate = useNavigate();
+
     return (
         <AppBar position="sticky" className='top-0'>
             <Container maxWidth="xl">
@@ -58,8 +61,7 @@ function ResponsiveAppBar() {
                     <Typography
                         variant="h6"
                         noWrap
-                        component="a"
-                        href="/"
+                        onClick={() => navigate("/")}
                         sx={{
                             mr: 2,
                             display: {xs: 'none', md: 'flex'},
@@ -103,7 +105,7 @@ function ResponsiveAppBar() {
                             }}
                         >
                             {pages.map((page) => (
-                                <MenuItem key={page.title} onClick={handleCloseNavMenu}>
+                                <MenuItem key={page.title} onClick={() => {navigate(page.href);handleCloseNavMenu}}>
                                     <Typography textAlign="center">{page.title}</Typography>
                                 </MenuItem>
                             ))}
@@ -132,8 +134,7 @@ function ResponsiveAppBar() {
                         {pages.map((page) => (
                             <Button
                                 key={page.title}
-                                href={page.href}
-                                onClick={handleCloseNavMenu}
+                                onClick={() => {navigate(page.href);handleCloseNavMenu()}}
                                 sx={{my: 2, color: 'white', display: 'block'}}
                             >
                                 {page.title}
