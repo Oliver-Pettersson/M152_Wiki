@@ -4,6 +4,7 @@ import React from "react";
 import ResponsiveAppBar from "./components/ResponsiveAppBar";
 import AboutPage from "./components/pages/AboutPage/AboutPage";
 import VideoPage from "./components/pages/VideoPage/VideoPage";
+import VideoDetail from "./components/pages/VideoDetail";
 import SoftwareLibraryPage from "./components/pages/SoftwareLibraryPage/SoftwareLibraryPage";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
                         <Route path="/*" element={<VideoPage/>}/>
                         <Route path="/about" element={<AboutPage/>}/>
                         <Route path="/software-library" element={<SoftwareLibraryPage/>}/>
+                        <Route path="/video" element={<VideoDetail />} />
                     </Routes>
                 </BrowserRouter>
             </div>
