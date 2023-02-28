@@ -9,7 +9,7 @@ import VideoDetail from "./components/pages/VideoDetail";
 
 function App() {
   return (
-    <div className="overflow-x-hidden w-full">
+    <div className="overflow-x-hidden w-fit">
       <Container className="pt-12">
         <BrowserRouter>
         <ResponsiveAppBar />
