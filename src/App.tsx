@@ -1,19 +1,25 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import './App.css'
-import AboutPage from './components/pages/AboutPage/AboutPage'
-import VideoPage from './components/pages/VideoPage/VideoPage'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import React from "react";
+import ResponsiveAppBar from "./components/ResponsiveAppBar";
+import { Container } from "@mui/material";
+import AboutPage from "./components/pages/AboutPage/AboutPage";
+import VideoPage from "./components/pages/VideoPage/VideoPage";
 
 function App() {
   return (
-    <>
-      <BrowserRouter>
-      <Routes>
-        <Route path='/*' element={<VideoPage />}/>
-        <Route path='/about' element={<AboutPage />} />
-      </Routes>
-      </BrowserRouter>
-    </>
-  )
+    <div className="overflow-x-hidden w-full">
+      <Container className="pt-12">
+        <BrowserRouter>
+        <ResponsiveAppBar />
+          <Routes>
+            <Route path="/*" element={<VideoPage />} />
+            <Route path="/about" element={<AboutPage />} />
+          </Routes>
+        </BrowserRouter>
+      </Container>
+    </div>
+  );
 }
 
-export default App
+export default App;
