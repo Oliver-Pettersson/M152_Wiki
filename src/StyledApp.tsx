@@ -4,14 +4,11 @@ import { Box, Container, createTheme, IconButton, ThemeProvider, useTheme } from
 import { BsFillMoonStarsFill, BsSun } from 'react-icons/all'
 import App from './App'
 
-const ColorModeContext = React.createContext({
+export const ColorModeContext = React.createContext({
   toggleColorMode: () => {}
 })
 
 function StyledApp() {
-  const theme = useTheme()
-  const colorMode = React.useContext(ColorModeContext)
-
   return (
     <Box
       sx={{
@@ -26,17 +23,6 @@ function StyledApp() {
       }}
     >
       <App />
-      <Box
-        sx={{
-          borderRadius: 1,
-          p: 3
-        }}
-      >
-        {theme.palette.mode} mode
-        <IconButton sx={{ ml: 1 }} onClick={colorMode.toggleColorMode} color="inherit">
-          {theme.palette.mode === 'dark' ? <BsSun /> : <BsFillMoonStarsFill />}
-        </IconButton>
-      </Box>
     </Box>
   )
 }
