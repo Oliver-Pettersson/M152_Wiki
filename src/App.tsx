@@ -5,6 +5,7 @@ import ResponsiveAppBar from "./components/ResponsiveAppBar";
 import { Container } from "@mui/material";
 import AboutPage from "./components/pages/AboutPage/AboutPage";
 import VideoPage from "./components/pages/VideoPage/VideoPage";
+import SoftwareLibraryPage from "./components/pages/SoftwareLibraryPage/SoftwareLibraryPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/*" element={<VideoPage />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/software-evaluation" element={<SoftwareLibraryPage />} />
           </Routes>
         </BrowserRouter>
       </Container>
