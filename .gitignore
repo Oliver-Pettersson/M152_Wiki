@@ -23,6 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
-*.lock
+*-Flock.json
 *-lock.yml
 *-lock.yaml
