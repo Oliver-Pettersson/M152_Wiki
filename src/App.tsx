@@ -1,39 +1,27 @@
-import './App.css'
-import React from 'react'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import React from "react";
 import ResponsiveAppBar from "./components/ResponsiveAppBar";
-import {Container} from "@mui/material";
+import { Container } from "@mui/material";
+import AboutPage from "./components/pages/AboutPage/AboutPage";
+import VideoPage from "./components/pages/VideoPage/VideoPage";
+import SoftwareLibraryPage from "./components/pages/SoftwareLibraryPage/SoftwareLibraryPage";
 
 function App() {
-    return (
-        <div className='overflow-x-hidden w-full h-full'>
-            <ResponsiveAppBar/>
-            <Container className='pt-12'>
-                <div className='flex flex-col items-center justify-center'>
-                        <Container className="underline text-green-600 font-bold">
-                            <h1>SODA WIKIIIII</h1>
-                            <h1>SODA WIKIIIII</h1>
-                            <h1>SODA WIKIIIII</h1>
-                            <h1>SODA WIKIIIII</h1>
-                            <h1>SODA WIKIIIII</h1>
-                            <h1>SODA WIKIIIII</h1>
-                            <h1>SODA WIKIIIII</h1>
-                            <h1>SODA WIKIIIII</h1>
-                            <h1>SODA WIKIIIII</h1>
-                            <h1>SODA WIKIIIII</h1>
-                            <h1>SODA WIKIIIII</h1>
-                            <h1>SODA WIKIIIII</h1>
-                            <h1>SODA WIKIIIII</h1>
-                            <h1>SODA WIKIIIII</h1>
-                            <h1>SODA WIKIIIII</h1>
-                            <h1>SODA WIKIIIII</h1>
-                            <h1>SODA WIKIIIII</h1>
-                            <h1>SODA WIKIIIII</h1>
-                            <h1>SODA WIKIIIII</h1>
-                        </Container>
-                </div>
-            </Container>
-        </div>
-    )
+  return (
+    <div className="overflow-x-hidden w-full">
+      <Container className="pt-12">
+        <BrowserRouter>
+        <ResponsiveAppBar />
+          <Routes>
+            <Route path="/*" element={<VideoPage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/software-evaluation" element={<SoftwareLibraryPage />} />
+          </Routes>
+        </BrowserRouter>
+      </Container>
+    </div>
+  );
 }
 
-export default App
+export default App;
