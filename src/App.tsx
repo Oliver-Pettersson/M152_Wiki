@@ -10,16 +10,16 @@ import SoftwareLibraryPage from "./components/pages/SoftwareLibraryPage/Software
 function App() {
   return (
     <div className="overflow-x-hidden w-full">
-      <Container className="pt-12">
+      <div className="pt-12">
         <BrowserRouter>
         <ResponsiveAppBar />
           <Routes>
             <Route path="/*" element={<VideoPage />} />
             <Route path="/about" element={<AboutPage />} />
-            <Route path="/software-evaluation" element={<SoftwareLibraryPage />} />
+            <Route path="/software-library" element={<SoftwareLibraryPage />} />
           </Routes>
         </BrowserRouter>
-      </Container>
+      </div>
     </div>
   );
 }

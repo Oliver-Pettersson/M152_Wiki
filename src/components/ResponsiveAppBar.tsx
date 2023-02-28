@@ -23,7 +23,7 @@ const pages = [{
     href: '/about',
 }, {
     title: 'Software Library',
-    href: '/software',
+    href: '/software-library',
 }, {
     title: 'Media Codex',
     href: '/media',
