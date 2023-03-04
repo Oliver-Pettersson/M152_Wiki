@@ -1,5 +1,6 @@
 import { Divider, Typography } from '@mui/material'
 import React from 'react'
+import Footer from '../../Footer'
 import ProfileCard from '../../organism/ProfileCard'
 import StatsCard from '../../StatsCard'
 
@@ -49,8 +50,9 @@ export default function AboutPage() {
 
         {/* Contact us section */}
         <div className="bg-yellow-400">
-
         </div>
+        
+        <Footer/>
       </div>
     </>
   )
