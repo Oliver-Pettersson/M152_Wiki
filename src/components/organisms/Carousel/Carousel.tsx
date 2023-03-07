@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import "./Carousel.css";
 import {useSwipeable} from "react-swipeable";
 
@@ -9,7 +9,7 @@ const config = {
     trackMouse: true,                      // track mouse input
     rotationAngle: 0,                      // set a rotation angle
     swipeDuration: Infinity,               // allowable duration of a swipe (ms). *See Notes*
-    touchEventOptions: { passive: true },  // options for touch listeners (*See Details*)
+    touchEventOptions: {passive: true},  // options for touch listeners (*See Details*)
 }
 
 export default function Carousel() {
