@@ -1,10 +1,42 @@
 import React, { useState } from "react";
 import "./Carousel.css";
+import {useSwipeable} from "react-swipeable";
+
+const config = {
+    delta: 10,                             // min distance(px) before a swipe starts. *See Notes*
+    preventScrollOnSwipe: false,           // prevents scroll during swipe (*See Details*)
+    trackTouch: true,                      // track touch input
+    trackMouse: true,                      // track mouse input
+    rotationAngle: 0,                      // set a rotation angle
+    swipeDuration: Infinity,               // allowable duration of a swipe (ms). *See Notes*
+    touchEventOptions: { passive: true },  // options for touch listeners (*See Details*)
+}
 
 export default function Carousel() {
-  const [activeImage, setActiveImage] = useState(3);
+    const handlers = useSwipeable({
+        onSwiped: (eventData: any) => {
+            const currentActiveImage = activeImage;
+            if (eventData.dir === "Left") {
+                if (currentActiveImage === 4) {
+                    setActiveImage(1);
+                } else {
+                    setActiveImage(currentActiveImage + 1);
+                }
+            } else if (eventData.dir === "Right") {
+                if (currentActiveImage === 1) {
+                    setActiveImage(4);
+                } else {
+                    setActiveImage(currentActiveImage - 1);
+                }
+            }
+            console.log("User Swiped!", eventData)
+        },
+        ...config,
+    });
+
+  const [activeImage, setActiveImage] = useState(1);
   return (
-    <div className="container" style={{margin: "auto", marginTop: 10}}>
+    <div className="container" style={{margin: "auto", marginTop: 10}} {...handlers}>
       <input
         type="radio"
         name="slider"

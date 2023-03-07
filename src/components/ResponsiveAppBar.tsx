@@ -19,7 +19,7 @@ const pages = [{
     title: 'Videos',
     href: '/videos',
 }, {
-    title: 'AboutPage Us',
+    title: 'About Us',
     href: '/about',
 }, {
     title: 'Software Library',

@@ -41,13 +41,21 @@ export default function AboutPage() {
         <Divider variant="middle"/>
 
         {/* Team section */}
+        {/* <div className="grid lg:grid-cols-4 sm:grid-cols-2 xs:grid-cols-1 gap-8 h-fit pt-20">
+          <ProfileCard title="Sascha Zize Buthelezi" image=""/>
+          <ProfileCard title="💣liver Yngve Akbar Petterss💣n" image=""/>
+          <ProfileCard title="Davide Leandro Marcoli" image=""/>
+          <ProfileCard title="Andrin Klarer" image=""/>
+        </div> */}
+  
+  <div className='flex justify-center text-center bg-gray-100'>
         <div className="grid lg:grid-cols-4 sm:grid-cols-2 xs:grid-cols-1 gap-8 h-fit pt-20">
-          <ProfileCard name="Sashimi 🍣 Buthelezi" source="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj24uILSWFA3nIy3T6Zjg-jG56FbbKn0NOEQ&usqp=CAU"/>
-          <ProfileCard name="Oliver Yngve Akbar Pettersson" source="https://img.freepik.com/free-vector/round-black-bomb-realistic-style_52683-15190.jpg?w=2000"/>
-          <ProfileCard name="David Leandro Marcoli" source="https://img.freepik.com/free-vector/sticker-template-with-pizza-isolated_1308-62307.jpg"/>
-          <ProfileCard name="Noel Klarer" source="https://www.svp.ch/wp-content/uploads/SVP-UDC_rgb.jpg"/>
+         <ProfileCard title="Sascha Zize Buthelezi" image="/image/sascha.jpg"/>
+          <ProfileCard title="💣liver Yngve Akbar Petterss💣n" image="/image/oliver.jpg"/>
+          <ProfileCard title="Davide Leandro Marcoli" image="/image/davide.jpg"/>
+          <ProfileCard title="Andrin Klarer" image="/image/andrin.jpg"/>
         </div>
-
+        </div>
         {/* Contact us section */}
         <div className="bg-yellow-400">
         </div>
