@@ -1,7 +1,7 @@
 import { Divider, Typography } from '@mui/material'
 import React from 'react'
 import Footer from '../../Footer'
-import ProfileCard from '../../organism/ProfileCard'
+import ProfileCard from '../../organisms/ProfileCard/ProfileCard'
 import StatsCard from '../../StatsCard'
 
 // Inspiration: https://dribbble.com/shots/18973465-Yoora-About-page

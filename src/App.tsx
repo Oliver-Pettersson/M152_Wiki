@@ -16,7 +16,7 @@ function App() {
                         <Route path="/*" element={<VideoPage/>}/>
                         <Route path="/about" element={<AboutPage/>}/>
                         <Route path="/software-library" element={<SoftwareLibraryPage/>}/>
-                        <Route path="/videos" element={<VideoDetail/>}/>
+                        <Route path="/videos/detail" element={<VideoDetail/>}/>
                     </Routes>
                 </BrowserRouter>
         </div>
