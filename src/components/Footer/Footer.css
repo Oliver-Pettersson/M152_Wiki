@@ -1,0 +1,48 @@
+.footer-wrapper {
+    background-color: pink;
+    flex: 1;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 2vh;
+    padding-bottom: 4vh;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.call-to-action-title {
+    font-size: 30px;
+}
+
+.call-to-action-text {
+    font-size: 18px;
+}
+
+.submit-button {
+    text-align: end;
+}
+
+.copyright-text {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.footer-divider {
+    background-color: #788AA3;
+    height: 2px;
+    opacity: 0.3;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+}
+
+.under-section {
+    align-items: center;
+}
+
+.icons {
+    text-align: end;
+}
+
+.icons > * {
+    font-size: 40px;
+    padding-left: 15px;
+}

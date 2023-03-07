@@ -1,6 +1,6 @@
 import { Divider, Typography } from '@mui/material'
 import React from 'react'
-import Footer from '../../Footer'
+import Footer from '../../Footer/Footer'
 import ProfileCard from '../../organism/ProfileCard'
 import StatsCard from '../../StatsCard'
 

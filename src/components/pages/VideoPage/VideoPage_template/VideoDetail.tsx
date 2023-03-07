@@ -1,22 +1,28 @@
 import { Typography } from "@mui/material";
 import { Container } from "@mui/material";
+import Fade from 'react-reveal/Fade';
 
 import React from 'react'
+import ScriptImporter from "../../../ScriptImporter";
 import StoryBoardItem from "../../../StoryBoardItem";
 import "./VideoPage_template.css";
+import Footer from "../../../Footer/Footer";
 
 function VideoDetail() {
+
     return (
         <>
             <div className="page-container w-full">
 
                 <div className="title-wrapper">
+                <Fade right>
                     <Typography variant="h1" className="title">Docker leicht gemacht</Typography>
                     <div className="point"/>
+                </Fade>
                 </div>
 
                 <div className="video-description">
-                    <p>
+                    <p className="video-description-text">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sed provident inventore ipsa sapiente quos, officiis molestias temporibus exercitationem ipsam.
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus doloribus itaque, nihil reiciendis in ea culpa aliquid! Commodi, natus quam.
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sed provident inventore ipsa sapiente quos, officiis molestias temporibus exercitationem ipsam.
@@ -32,14 +38,16 @@ function VideoDetail() {
                         allowFullScreen
                         title="Embedded youtube"
                     />
-                    <Typography className="video-thumbnail-description row-span-2 col-span-1">
-                        In this weeks video we take a dive into the inner workings of Docker!
-                    </Typography>
+                    <Fade bottom>
+                        <Typography className="video-thumbnail-description row-span-2 col-span-1">
+                            In this weeks video we take a dive into the inner workings of Docker!
+                        </Typography>
+                    </Fade>
                 </div>
 
-                {/* Story boards below  */}
                 <div className="divider"></div>
 
+                {/* Story boards below  */}
                 <div className="storyboard-title-wrapper">
                     <Typography variant="h3">Story Board</Typography>
                 </div>
@@ -49,6 +57,10 @@ function VideoDetail() {
                     <StoryBoardItem isOnLeftSide={false}/>
                     <StoryBoardItem isOnLeftSide={true}/>
                 </div>
+
+                <div className="divider"></div>
+
+                <Footer/>
             </div>
         </>
     )
