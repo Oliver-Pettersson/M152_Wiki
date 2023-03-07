@@ -13,17 +13,17 @@ import AdbIcon from '@mui/icons-material/Adb';
 import {BsFillMoonStarsFill, BsSun} from "react-icons/all";
 import {ColorModeContext} from "../StyledApp";
 import {useTheme} from "@mui/material";
-import { useNavigate } from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
 const pages = [{
     title: 'Videos',
     href: '/videos',
 }, {
-    title: 'About Us',
+    title: 'AboutPage Us',
     href: '/about',
 }, {
     title: 'Software Library',
-    href: '/software',
+    href: '/software-library',
 }, {
     title: 'Media Codex',
     href: '/media',
@@ -105,7 +105,10 @@ function ResponsiveAppBar() {
                             }}
                         >
                             {pages.map((page) => (
-                                <MenuItem key={page.title} onClick={() => {navigate(page.href);handleCloseNavMenu()}}>
+                                <MenuItem key={page.title} onClick={() => {
+                                    navigate(page.href);
+                                    handleCloseNavMenu
+                                }}>
                                     <Typography textAlign="center">{page.title}</Typography>
                                 </MenuItem>
                             ))}
@@ -134,7 +137,10 @@ function ResponsiveAppBar() {
                         {pages.map((page) => (
                             <Button
                                 key={page.title}
-                                onClick={() => {navigate(page.href);handleCloseNavMenu()}}
+                                onClick={() => {
+                                    navigate(page.href);
+                                    handleCloseNavMenu()
+                                }}
                                 sx={{my: 2, color: 'white', display: 'block'}}
                             >
                                 {page.title}
@@ -148,8 +154,8 @@ function ResponsiveAppBar() {
                         }}
                     >
                         {theme.palette.mode} mode
-                        <IconButton sx={{ ml: 1 }} onClick={colorMode.toggleColorMode} color="inherit">
-                            {theme.palette.mode === 'dark' ? <BsSun /> : <BsFillMoonStarsFill />}
+                        <IconButton sx={{ml: 1}} onClick={colorMode.toggleColorMode} color="inherit">
+                            {theme.palette.mode === 'dark' ? <BsSun/> : <BsFillMoonStarsFill/>}
                         </IconButton>
                     </Box>
                 </Toolbar>
