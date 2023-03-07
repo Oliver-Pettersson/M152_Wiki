@@ -9,8 +9,7 @@ import VideoDetail from "./components/pages/VideoDetail";
 
 function App() {
     return (
-        <div className="overflow-x-hidden w-full">
-            <div className="pt-12">
+        <div className="overflow-x-hidden w-full h-full">
                 <BrowserRouter>
                     <ResponsiveAppBar/>
                     <Routes>
@@ -20,7 +19,6 @@ function App() {
                         <Route path="/videos" element={<VideoDetail/>}/>
                     </Routes>
                 </BrowserRouter>
-            </div>
         </div>
     );
 }
