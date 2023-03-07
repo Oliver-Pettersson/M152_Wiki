@@ -47,14 +47,15 @@ export default function AboutPage() {
           <ProfileCard title="Davide Leandro Marcoli" image=""/>
           <ProfileCard title="Andrin Klarer" image=""/>
         </div> */}
-
+  
+  <div className='flex justify-center text-center bg-gray-100'>
         <div className="grid lg:grid-cols-4 sm:grid-cols-2 xs:grid-cols-1 gap-8 h-fit pt-20">
-         <ProfileCard title="Sascha Zize Buthelezi" image=""/>
-          <ProfileCard title="💣liver Yngve Akbar Petterss💣n" image=""/>
-          <ProfileCard title="Davide Leandro Marcoli" image=""/>
-          <ProfileCard title="Andrin Klarer" image=""/>
+         <ProfileCard title="Sascha Zize Buthelezi" image="/image/sascha.jpg"/>
+          <ProfileCard title="💣liver Yngve Akbar Petterss💣n" image="/image/oliver.jpg"/>
+          <ProfileCard title="Davide Leandro Marcoli" image="/image/davide.jpg"/>
+          <ProfileCard title="Andrin Klarer" image="/image/andrin.jpg"/>
         </div>
-
+        </div>
         {/* Contact us section */}
         <div className="bg-yellow-400">
         </div>
