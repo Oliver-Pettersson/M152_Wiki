@@ -60,7 +60,7 @@ export default function AboutPage() {
                         <ProfileCard title="Sascha Zize Buthelezi" image="/image/sascha.jpg"/>
                         <ProfileCard title="💣liver Yngve Akbar Petterss💣n" image="/image/oliver.jpg"/>
                         <ProfileCard title="Davide Leandro Marcoli" image="/image/davide.jpg"/>
-                        <ProfileCard title="Andrin Klarer" image="/image/andrin.jpg"/>
+                        <ProfileCard title="Andrin Klarer" image="/image/andrin.png"/>
                     </div>
                 </div>
                 {/* Contact us section */}
