@@ -13,14 +13,14 @@ module.exports = {
                         1: '#ffffff',
                         2: '#272727',
                         scrollbarTrack: '#ffffff',
-                        scrollbarThumb: 'blue',
+                        scrollbarThumb: '#9CD08F',
                         scrollbarThumbHover: '#555',
                     },
                     dark: {
                         1: '#121212',
                         2: '#272727',
                         scrollbarTrack: '#121212',
-                        scrollbarThumb: '#9CD08F',
+                        scrollbarThumb: '#788AA3',
                         scrollbarThumbHover: '#555',
                     }
                 },
