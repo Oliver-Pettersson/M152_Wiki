@@ -75,45 +75,49 @@ export default function SoftwareLibraryPage() {
 
                 {/*<br/>*/}
 
-                <SoftwareLibraryCardComponent text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet finibus enim. In\n" +
-                    "                            hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n" +
-                    "                            Suspendisse luctus lacus ac dui fringilla euismod. Proin euismod, justo id molestie\n" +
-                    "                            congue, ex leo accumsan est, vitae egestas felis nulla id ex. Donec porta tortor\n" +
-                    "                            suscipit purus consequat, ac cursus dolor luctus. Etiam interdum purus sed urna\n" +
-                    "                            venenatis tristique. Donec porta leo sem, in varius arcu efficitur ut. Maecenas vitae mi\n" +
-                    "                            a nulla vehicula dictum. Aliquam quis turpis eget nisi commodo faucibus. Ut volutpat\n" +
-                    "                            nunc vel porta interdum. Vestibulum metus massa, fermentum eu elementum id, congue non\n" +
-                    "                            ex. Sed ex odio, luctus ac vestibulum et, tempus iaculis arcu.\n" +
-                    "                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet finibus enim. In\n" +
-                    "                            hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n" +
-                    "                            Suspendisse luctus lacus ac dui fringilla euismod. Proin euismod, justo id molestie\n" +
-                    "                            congue, ex leo accumsan est, vitae egestas felis nulla id ex. Donec porta tortor\n" +
-                    "                            suscipit purus consequat, ac cursus dolor luctus. Etiam interdum purus sed urna\n" +
-                    "                            venenatis tristique. Donec porta leo sem, in varius arcu efficitur ut. Maecenas vitae mi\n" +
-                    "                            a nulla vehicula dictum. Aliquam quis turpis eget nisi commodo faucibus. Ut volutpat\n" +
-                    "                            nunc vel porta interdum. Vestibulum metus massa, fermentum eu elementum id, congue non\n" +
-                    "                            ex. Sed ex odio, luctus ac vestibulum et, tempus iaculis arcu."} image={'https://source.unsplash.com/random/?Cat'} imageDirection={'left'} />
+                <SoftwareLibraryCardComponent
+                    text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet finibus enim. In\n" +
+                        "                            hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n" +
+                        "                            Suspendisse luctus lacus ac dui fringilla euismod. Proin euismod, justo id molestie\n" +
+                        "                            congue, ex leo accumsan est, vitae egestas felis nulla id ex. Donec porta tortor\n" +
+                        "                            suscipit purus consequat, ac cursus dolor luctus. Etiam interdum purus sed urna\n" +
+                        "                            venenatis tristique. Donec porta leo sem, in varius arcu efficitur ut. Maecenas vitae mi\n" +
+                        "                            a nulla vehicula dictum. Aliquam quis turpis eget nisi commodo faucibus. Ut volutpat\n" +
+                        "                            nunc vel porta interdum. Vestibulum metus massa, fermentum eu elementum id, congue non\n" +
+                        "                            ex. Sed ex odio, luctus ac vestibulum et, tempus iaculis arcu.\n" +
+                        "                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet finibus enim. In\n" +
+                        "                            hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n" +
+                        "                            Suspendisse luctus lacus ac dui fringilla euismod. Proin euismod, justo id molestie\n" +
+                        "                            congue, ex leo accumsan est, vitae egestas felis nulla id ex. Donec porta tortor\n" +
+                        "                            suscipit purus consequat, ac cursus dolor luctus. Etiam interdum purus sed urna\n" +
+                        "                            venenatis tristique. Donec porta leo sem, in varius arcu efficitur ut. Maecenas vitae mi\n" +
+                        "                            a nulla vehicula dictum. Aliquam quis turpis eget nisi commodo faucibus. Ut volutpat\n" +
+                        "                            nunc vel porta interdum. Vestibulum metus massa, fermentum eu elementum id, congue non\n" +
+                        "                            ex. Sed ex odio, luctus ac vestibulum et, tempus iaculis arcu."}
+                    image={'https://source.unsplash.com/random/?Cat'} imageDirection={'left'}/>
 
                 <br/>
 
-                <SoftwareLibraryCardComponent text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet finibus enim. In\n" +
-                    "                            hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n" +
-                    "                            Suspendisse luctus lacus ac dui fringilla euismod. Proin euismod, justo id molestie\n" +
-                    "                            congue, ex leo accumsan est, vitae egestas felis nulla id ex. Donec porta tortor\n" +
-                    "                            suscipit purus consequat, ac cursus dolor luctus. Etiam interdum purus sed urna\n" +
-                    "                            venenatis tristique. Donec porta leo sem, in varius arcu efficitur ut. Maecenas vitae mi\n" +
-                    "                            a nulla vehicula dictum. Aliquam quis turpis eget nisi commodo faucibus. Ut volutpat\n" +
-                    "                            nunc vel porta interdum. Vestibulum metus massa, fermentum eu elementum id, congue non\n" +
-                    "                            ex. Sed ex odio, luctus ac vestibulum et, tempus iaculis arcu.\n" +
-                    "                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet finibus enim. In\n" +
-                    "                            hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n" +
-                    "                            Suspendisse luctus lacus ac dui fringilla euismod. Proin euismod, justo id molestie\n" +
-                    "                            congue, ex leo accumsan est, vitae egestas felis nulla id ex. Donec porta tortor\n" +
-                    "                            suscipit purus consequat, ac cursus dolor luctus. Etiam interdum purus sed urna\n" +
-                    "                            venenatis tristique. Donec porta leo sem, in varius arcu efficitur ut. Maecenas vitae mi\n" +
-                    "                            a nulla vehicula dictum. Aliquam quis turpis eget nisi commodo faucibus. Ut volutpat\n" +
-                    "                            nunc vel porta interdum. Vestibulum metus massa, fermentum eu elementum id, congue non\n" +
-                    "                            ex. Sed ex odio, luctus ac vestibulum et, tempus iaculis arcu."} image={'https://source.unsplash.com/random/?Dog'} imageDirection={'right'} />
+                <SoftwareLibraryCardComponent
+                    text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet finibus enim. In\n" +
+                        "                            hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n" +
+                        "                            Suspendisse luctus lacus ac dui fringilla euismod. Proin euismod, justo id molestie\n" +
+                        "                            congue, ex leo accumsan est, vitae egestas felis nulla id ex. Donec porta tortor\n" +
+                        "                            suscipit purus consequat, ac cursus dolor luctus. Etiam interdum purus sed urna\n" +
+                        "                            venenatis tristique. Donec porta leo sem, in varius arcu efficitur ut. Maecenas vitae mi\n" +
+                        "                            a nulla vehicula dictum. Aliquam quis turpis eget nisi commodo faucibus. Ut volutpat\n" +
+                        "                            nunc vel porta interdum. Vestibulum metus massa, fermentum eu elementum id, congue non\n" +
+                        "                            ex. Sed ex odio, luctus ac vestibulum et, tempus iaculis arcu.\n" +
+                        "                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet finibus enim. In\n" +
+                        "                            hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n" +
+                        "                            Suspendisse luctus lacus ac dui fringilla euismod. Proin euismod, justo id molestie\n" +
+                        "                            congue, ex leo accumsan est, vitae egestas felis nulla id ex. Donec porta tortor\n" +
+                        "                            suscipit purus consequat, ac cursus dolor luctus. Etiam interdum purus sed urna\n" +
+                        "                            venenatis tristique. Donec porta leo sem, in varius arcu efficitur ut. Maecenas vitae mi\n" +
+                        "                            a nulla vehicula dictum. Aliquam quis turpis eget nisi commodo faucibus. Ut volutpat\n" +
+                        "                            nunc vel porta interdum. Vestibulum metus massa, fermentum eu elementum id, congue non\n" +
+                        "                            ex. Sed ex odio, luctus ac vestibulum et, tempus iaculis arcu."}
+                    image={'https://source.unsplash.com/random/?Dog'} imageDirection={'right'}/>
             </Container>
         </div>
     );

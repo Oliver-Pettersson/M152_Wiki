@@ -1,4 +1,4 @@
-import { TextField, Typography } from '@mui/material'
+import {TextField, Typography} from '@mui/material'
 import React from 'react'
 
 // Inspiration: https://dribbble.com/shots/20082464-Footers-Untitled-UI

@@ -10,15 +10,15 @@ import VideoDetail from "./components/pages/VideoDetail";
 function App() {
     return (
         <div className="overflow-x-hidden w-full h-full">
-                <BrowserRouter>
-                    <ResponsiveAppBar/>
-                    <Routes>
-                        <Route path="/*" element={<VideoPage/>}/>
-                        <Route path="/about" element={<AboutPage/>}/>
-                        <Route path="/software-library" element={<SoftwareLibraryPage/>}/>
-                        <Route path="/videos" element={<VideoDetail/>}/>
-                    </Routes>
-                </BrowserRouter>
+            <BrowserRouter>
+                <ResponsiveAppBar/>
+                <Routes>
+                    <Route path="/*" element={<VideoPage/>}/>
+                    <Route path="/about" element={<AboutPage/>}/>
+                    <Route path="/software-library" element={<SoftwareLibraryPage/>}/>
+                    <Route path="/videos" element={<VideoDetail/>}/>
+                </Routes>
+            </BrowserRouter>
         </div>
     );
 }

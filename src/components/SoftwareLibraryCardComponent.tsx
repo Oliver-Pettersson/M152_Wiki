@@ -1,5 +1,5 @@
 import React from "react";
-import {createStyles, makeStyles, useTheme} from "@mui/material";
+import {useTheme} from "@mui/material";
 
 interface SoftwareLibraryCardComponentProps {
     text: string;

@@ -1,5 +1,4 @@
-import { Typography } from "@mui/material";
-import { Container } from "@mui/material";
+import {Container, Typography} from "@mui/material";
 
 import React from 'react'
 import StoryBoardItem from "../StoryBoardItem";
@@ -13,9 +12,12 @@ function VideoDetail() {
                 </div>
                 <div className="video-description bg-blue-400 m-2">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sed provident inventore ipsa sapiente quos, officiis molestias temporibus exercitationem ipsam.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus doloribus itaque, nihil reiciendis in ea culpa aliquid! Commodi, natus quam.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sed provident inventore ipsa sapiente quos, officiis molestias temporibus exercitationem ipsam.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sed provident inventore ipsa
+                        sapiente quos, officiis molestias temporibus exercitationem ipsam.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus doloribus itaque, nihil
+                        reiciendis in ea culpa aliquid! Commodi, natus quam.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sed provident inventore ipsa
+                        sapiente quos, officiis molestias temporibus exercitationem ipsam.
                     </p>
                 </div>
                 <div className="main-content grid grid-rows-2 grid-flow-col">
@@ -30,7 +32,8 @@ function VideoDetail() {
                         title="Embedded youtube"
                     />
                     <Typography className="bg-blue-400 row-span-2 col-span-1">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nobis quo mollitia, laboriosam nostrum fuga amet consequuntur? Ab, aspernatur eveniet!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nobis quo mollitia, laboriosam
+                        nostrum fuga amet consequuntur? Ab, aspernatur eveniet!
                     </Typography>
                 </div>
                 {/* Story boards below  */}
