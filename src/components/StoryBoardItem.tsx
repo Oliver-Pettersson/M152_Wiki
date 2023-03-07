@@ -6,7 +6,7 @@ function StoryBoardItem(props: any) {
         <>
             <div className="flex-1">
             {/* Left side */}
-            {props.left &&
+            {props.isOnLeftSide &&
                 <>
                     <div className="flex-row grid grid-rows-2 grid-flow-col">
                         <img className="row-span-2 col-span-2" width="500" height="300" src="https://www.wikihow.com/images/thumb/7/76/Draw-Comic-Book-Action-Step-9.jpg/aid1354781-v4-1200px-Draw-Comic-Book-Action-Step-9.jpg"/>
@@ -18,7 +18,7 @@ function StoryBoardItem(props: any) {
             }
 
             {/* Right side */}
-            {!props.left &&
+            {!props.isOnLeftSide &&
                 <>
                     <div className="flex-row grid grid-rows-2 grid-flow-col">
                         <Typography className="row-span-2 col-span-1">

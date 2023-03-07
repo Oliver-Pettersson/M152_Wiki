@@ -5,7 +5,7 @@ import ResponsiveAppBar from "./components/ResponsiveAppBar";
 import AboutPage from "./components/pages/AboutPage/AboutPage";
 import VideoPage from "./components/pages/VideoPage/VideoPage";
 import SoftwareLibraryPage from "./components/pages/SoftwareLibraryPage/SoftwareLibraryPage";
-import VideoDetail from "./components/pages/VideoDetail";
+import VideoDetail from "./components/pages/VideoPage/VideoPage_template/VideoDetail";
 
 function App() {
     return (

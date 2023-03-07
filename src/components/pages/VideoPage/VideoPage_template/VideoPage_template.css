@@ -1,0 +1,57 @@
+/* 
+    Styling
+*/
+
+.page-container {
+    flex: 1;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    margin-bottom: 5vw;
+}
+
+.title-wrapper {
+    margin-top: 10vw;
+}
+
+.title {
+}
+
+.point {
+    background-color: #62DB44;
+    width: 20vw;
+    height: 20px;
+}
+
+.video-description {
+    margin-top: 5vw;
+    padding-bottom: 3vw;
+}
+
+.main-content {
+    background-color: #9CD08F;
+    padding: 1vw;
+}
+
+.video-thumbnail {
+    width: 50em;
+    height: 30em;
+}
+
+.main-content .video-thumbnail-description {
+    align-self: center;
+    text-align: center;
+    font-size: 40px;
+}
+
+.divider {
+    background-color: #788AA3;
+    width: 90%;
+    height: 2px;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+    margin-left: 4.5vw;
+}
+
+.storyboard-title-wrapper {
+    margin-bottom: 4vw;
+}
