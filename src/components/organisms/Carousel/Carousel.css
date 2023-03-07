@@ -66,7 +66,7 @@ img {
 }
 
 #item-1:checked ~ .cards #song-3, #item-2:checked ~ .cards #song-4, #item-3:checked ~ .cards #song-1, #item-4:checked ~ .cards #song-2 {
-  transform: translatex(0) scale(0);
+  transform: translatex(40%) scale(0);
   opacity: .4;
   z-index: 0;
 }
