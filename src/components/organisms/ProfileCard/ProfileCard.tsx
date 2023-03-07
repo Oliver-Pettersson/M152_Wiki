@@ -1,31 +1,28 @@
 import React from "react";
+import "./CardStyle.css";
 
-export default function ProfileCard(props: any) {
-  return (
-    <div className="py-4">
-      <div className="shadow-lg group container  rounded-md bg-white  max-w-sm flex justify-center items-center  mx-auto content-div">
-        <div className="w-60 h-80">
-          <div className="">
-            <img src={props.source}></img>
-          </div>
-          <div className="flex items-center justify-center p-auto h-1/5 px-4 bg-white rounded-b-md fd-cl">
-            <span className="block text-lg text-gray-800 font-bold tracking-wide">
-              {props.name}
-            </span>
-          </div>
-        </div>
+interface PropsType {
+    title: string;
+    image: string;
+}
 
-        <div className="absolute opacity-0 fd-sh">
-        <div className="w-full h-80">
-          <div className="w-full h-3/5 image-cover rounded-t-md"></div>
-          <div className=" flex items-center justify-center p-auto h-2/5 px-4 bg-white rounded-b-md fd-cl group-hover:opacity-25">
-            <span className="block text-lg text-gray-800 font-bold tracking-wide">
-              {props.name}
-            </span>
-          </div>
+export default function ProfileCard({title, image}: PropsType) {
+    return (
+        <div className="py-4 w-60">
+            <div
+                className={"shadow-lg rounded-md dark:bg-custom-dark-1 bg-white max-w-sm flex justify-center items-center mx-auto content-div"}>
+                <div className="w-full">
+                    <img className="w-full h-full rounded-t-md" style={{boxShadow: 'none'}} src={image} alt="image"/>
+                    {/*<div className="rounded-t-md">*/}
+                    {/*</div>*/}
+                    <div
+                        className="h-12 my-3 flex items-center justify-center p-auto h-1/5 px-4 dark:bg-custom-dark-1 bg-white rounded-b-md">
+                        <span className="block text-lg dark:text-white text-gray-800 font-bold tracking-wide">
+                          {title}
+                        </span>
+                    </div>
+                </div>
+            </div>
         </div>
-        </div>
-      </div>
-    </div>
-  );
+    );
 }
