@@ -6,6 +6,7 @@ import AboutPage from "./components/pages/AboutPage/AboutPage";
 import VideoPage from "./components/pages/VideoPage/VideoPage";
 import SoftwareLibraryPage from "./components/pages/SoftwareLibraryPage/SoftwareLibraryPage";
 import VideoDetail from "./components/pages/VideoPage/VideoPage_template/VideoDetail";
+import Footer from "./components/Footer/Footer";
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                         <Route path="/videos" element={<VideoDetail/>}/>
                     </Routes>
                 </BrowserRouter>
+                <Footer/>
         </div>
     );
 }

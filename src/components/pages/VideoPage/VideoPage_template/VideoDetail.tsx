@@ -59,8 +59,6 @@ function VideoDetail() {
                 </div>
 
                 <div className="divider"></div>
-
-                <Footer/>
             </div>
         </>
     )

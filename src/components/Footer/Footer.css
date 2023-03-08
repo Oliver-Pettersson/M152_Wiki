@@ -1,5 +1,5 @@
 .footer-wrapper {
-    background-color: pink;
+    background-color: #9CD08F;
     flex: 1;
     padding-left: 2vw;
     padding-right: 2vw;
@@ -17,13 +17,37 @@
     font-size: 18px;
 }
 
-.submit-button {
+.input {
     text-align: end;
+    align-items: center;
 }
 
-.copyright-text {
-    font-size: 12px;
-    font-style: italic;
+#outlined-basic {
+    height: 3vh;
+}
+
+.submit-button {
+    margin-left: 20px;
+    height: 7.5vh;
+}
+
+.links {
+    margin-top: 4vh;
+    column-count: 6;
+    column-gap: 10px;
+}
+
+.columns {
+    height: 25vh;
+}
+
+.column-header {
+    opacity: 0.8;
+    font-size: 14px;
+}
+
+.a-ref > li > a{
+   color: inherit;
 }
 
 .footer-divider {
@@ -38,11 +62,15 @@
     align-items: center;
 }
 
+.copyright-text {
+    font-size: 12px;
+    font-style: italic;
+}
+
 .icons {
     text-align: end;
 }
 
 .icons > * {
-    font-size: 40px;
-    padding-left: 15px;
+    padding-left: 10px;
 }

@@ -58,8 +58,6 @@ export default function AboutPage() {
         {/* Contact us section */}
         <div className="bg-yellow-400">
         </div>
-        
-        <Footer/>
       </div>
     </>
   )
