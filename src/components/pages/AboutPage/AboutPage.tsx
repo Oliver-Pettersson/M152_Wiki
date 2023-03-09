@@ -3,11 +3,12 @@ import React from 'react'
 import Footer from '../../Footer/Footer'
 import ProfileCard from '../../organisms/ProfileCard/ProfileCard'
 import StatsCard from '../../StatsCard'
+import AnimatedPage from '../AnimatedPage'
 
 // Inspiration: https://dribbble.com/shots/18973465-Yoora-About-page
 export default function AboutPage() {
     return (
-        <>
+        <AnimatedPage>
             <div className='justify-center overflow-x-hidden'>
 
                 {/* Header section */}
@@ -67,6 +68,6 @@ export default function AboutPage() {
                 <div className="bg-yellow-400">
                 </div>
             </div>
-        </>
+        </AnimatedPage>
     )
 }

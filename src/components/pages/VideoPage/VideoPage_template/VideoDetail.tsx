@@ -7,11 +7,12 @@ import ScriptImporter from "../../../ScriptImporter";
 import StoryBoardItem from "../../../StoryBoardItem";
 import "./VideoPage_template.css";
 import Footer from "../../../Footer/Footer";
+import AnimatedPage from "../../AnimatedPage";
 
 function VideoDetail() {
 
     return (
-        <>
+        <AnimatedPage>
             <div className="page-container w-full">
 
                 <div className="title-wrapper">
@@ -60,7 +61,7 @@ function VideoDetail() {
 
                 <div className="divider"></div>
             </div>
-        </>
+        </AnimatedPage>
     )
 }
 
