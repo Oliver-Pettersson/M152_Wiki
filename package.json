@@ -13,6 +13,8 @@
     "@emotion/styled": "^11.10.6",
     "@mui/icons-material": "^5.11.9",
     "@mui/material": "^5.11.10",
+    "@react-three/fiber": "^8.12.0",
+    "@types/three": "^0.149.0",
     "autoprefixer": "^10.4.13",
     "framer-motion": "^10.2.3",
     "react": "^18.2.0",
@@ -20,7 +22,9 @@
     "react-icons": "^4.7.1",
     "react-reveal": "^1.2.2",
     "react-router-dom": "^6.8.2",
-    "react-swipeable": "^7.0.0"
+    "react-swipeable": "^7.0.0",
+    "react-three": "^0.9.7",
+    "three": "^0.150.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
