@@ -76,26 +76,3 @@ button:focus-visible {
         background-color: #f9f9f9;
     }
 }
-
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    /*background: #f1f1f1;*/
-    @apply bg-custom-light-scrollbarTrack dark:bg-custom-dark-scrollbarTrack;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    /*background: #888;*/
-    @apply bg-custom-light-scrollbarThumb dark:bg-custom-dark-scrollbarThumb;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    /*background: #555;*/
-    @apply bg-custom-light-scrollbarThumbHover dark:bg-custom-dark-scrollbarThumbHover;
-}
