@@ -42,7 +42,7 @@ export default function ProfileCard({ title, image }: PropsType) {
                     size: party.variation.range(0.5, 1.5),
                 })
                 break;
-            case "/image/andrin.png":
+            case "/image/andrin.jpg":
                 party.confetti(target, {
                     shapes: ["cow", "pig", "chicken", "sheep", "horse", "dog", "cat", "fish", "bird", "elephant", "lion", "unicorn", "dragon", "tractor"],
                     size: party.variation.range(1, 2),
