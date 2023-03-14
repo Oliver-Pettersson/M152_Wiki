@@ -1,13 +1,10 @@
-import { Typography } from "@mui/material";
-import { Container } from "@mui/material";
+import {Typography} from "@mui/material";
 import Fade from 'react-reveal/Fade';
 
 import React from 'react'
-import ScriptImporter from "../../../ScriptImporter";
-import StoryBoardItem from "../../../StoryBoardItem";
-import "./VideoPage_template.css";
-import Footer from "../../../Footer/Footer";
-import AnimatedPage from "../../AnimatedPage";
+import StoryBoardItem from "../../molecules/StoryBoardItem/StoryBoardItem";
+import "./VideoDetail.css";
+import AnimatedPage from "../../pages/AnimatedPage";
 
 function VideoDetail() {
 

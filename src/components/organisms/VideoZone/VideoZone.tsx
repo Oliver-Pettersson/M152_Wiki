@@ -1,27 +1,45 @@
+import { useWindowWidth } from "@react-hook/window-size";
 import React from "react";
 import VideoCard from "../../molecules/VideoCard/VideoCard";
 
-export default function VideoZone() {
+const VideoZone = () => {
+  const width = useWindowWidth()
+
+  const videoList = []
+    for (let i = 0; i < 400; i++) {
+        videoList.push(
+            <VideoCard
+            img="https://www.youtube.com/embed/rf8YebDBcbY"
+            desc={"OKIDOKI " + i}
+            key={i}
+            />
+        )
+    }
+
   return (
     <>
-      <div className="grid grid-cols-2 gap-4">
-        <VideoCard
-          img="https://images.unsplash.com/photo-1530651788726-1dbf58eeef1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80"
-          desc="OKIDOKI"
-        />
-        <VideoCard
-          img="https://images.unsplash.com/photo-1530651788726-1dbf58eeef1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80"
-          desc="OKIDOKI"
-        />
-        <VideoCard
-          img="https://images.unsplash.com/photo-1530651788726-1dbf58eeef1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80"
-          desc="OKIDOKI"
-        />
-        <VideoCard
-          img="https://images.unsplash.com/photo-1530651788726-1dbf58eeef1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80"
-          desc="OKIDOKI"
-        />
+      <div className={width > 600 ? "grid gap-4 grid-cols-2" : "grid gap-4 grid-cols-1"}>
+        {/*<VideoCard*/}
+        {/*  img="https://www.youtube.com/embed/rf8YebDBcbY"*/}
+        {/*  desc="OKIDOKI"*/}
+        {/*/>*/}
+        {/*<VideoCard*/}
+        {/*  img="https://www.youtube.com/embed/rf8YebDBcbY"*/}
+        {/*  desc="OKIDOKI"*/}
+        {/*/>*/}
+        {/*<VideoCard*/}
+        {/*  img="https://www.youtube.com/embed/rf8YebDBcbY"*/}
+        {/*  desc="OKIDOKI"*/}
+        {/*/>*/}
+        {/*<VideoCard*/}
+        {/*  img="https://www.youtube.com/embed/rf8YebDBcbY"*/}
+        {/*  desc="OKIDOKI"*/}
+        {/*/>*/}
+
+        {videoList}
       </div>
     </>
   );
 }
+
+export default VideoZone

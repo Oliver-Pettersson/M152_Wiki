@@ -32,12 +32,12 @@ function Footer() {
                     <div className="columns">
                         <p className="column-header">Product</p>
                         <ul className="a-ref">
-                            <li><a href="">Overview</a></li>
-                            <li><a href="">Features</a></li>
-                            <li><a href="">Solutions</a></li>
-                            <li><a href="">Tutorials</a></li>
-                            <li><a href="">Pricing</a></li>
-                            <li><a href="">Releases</a></li>
+                            <li><a href="src/components/organisms/Footer">Overview</a></li>
+                            <li><a href="src/components/organisms/Footer">Features</a></li>
+                            <li><a href="src/components/organisms/Footer">Solutions</a></li>
+                            <li><a href="src/components/organisms/Footer">Tutorials</a></li>
+                            <li><a href="src/components/organisms/Footer">Pricing</a></li>
+                            <li><a href="src/components/organisms/Footer">Releases</a></li>
                             
                         </ul>
                     </div>
@@ -45,46 +45,46 @@ function Footer() {
                     <div className="columns">
                         <p className="column-header">Company</p>
                         <ul className="a-ref">
-                            <li><a href="">About us</a></li>
-                            <li><a href="">Careers</a></li>
-                            <li><a href="">Press</a></li>
-                            <li><a href="">News</a></li>
-                            <li><a href="">Media kit</a></li>
-                            <li><a href="">Contact</a></li>
+                            <li><a href="src/components/organisms/Footer">About us</a></li>
+                            <li><a href="src/components/organisms/Footer">Careers</a></li>
+                            <li><a href="src/components/organisms/Footer">Press</a></li>
+                            <li><a href="src/components/organisms/Footer">News</a></li>
+                            <li><a href="src/components/organisms/Footer">Media kit</a></li>
+                            <li><a href="src/components/organisms/Footer">Contact</a></li>
                         </ul>
                     </div>
 
                     <div className="columns">
                         <p className="column-header">Ressources</p>
                         <ul className="a-ref">
-                            <li><a href="">Blog</a></li>
-                            <li><a href="">Newsletter</a></li>
-                            <li><a href="">Events</a></li>
-                            <li><a href="">Help centre</a></li>
-                            <li><a href="">Tutorials</a></li>
-                            <li><a href="">Support</a></li>
+                            <li><a href="src/components/organisms/Footer">Blog</a></li>
+                            <li><a href="src/components/organisms/Footer">Newsletter</a></li>
+                            <li><a href="src/components/organisms/Footer">Events</a></li>
+                            <li><a href="src/components/organisms/Footer">Help centre</a></li>
+                            <li><a href="src/components/organisms/Footer">Tutorials</a></li>
+                            <li><a href="src/components/organisms/Footer">Support</a></li>
                         </ul>
                     </div>
 
                     <div className="columns">
                         <p className="column-header">Social</p>
                         <ul className="a-ref">
-                            <li><a href="">Facebook</a></li>
-                            <li><a href="">Twitter</a></li>
-                            <li><a href="">LinkedIn</a></li>
-                            <li><a href="">Github</a></li>
+                            <li><a href="src/components/organisms/Footer">Facebook</a></li>
+                            <li><a href="src/components/organisms/Footer">Twitter</a></li>
+                            <li><a href="src/components/organisms/Footer">LinkedIn</a></li>
+                            <li><a href="src/components/organisms/Footer">Github</a></li>
                         </ul>
                     </div>
 
                     <div className="columns">
                         <p className="column-header">Legal</p>
                         <ul className="a-ref">
-                            <li><a href="">Terms</a></li>
-                            <li><a href="">Privacy</a></li>
-                            <li><a href="">Cookies</a></li>
-                            <li><a href="">Licenses</a></li>
-                            <li><a href="">Settings</a></li>
-                            <li><a href="">Contact</a></li>
+                            <li><a href="src/components/organisms/Footer">Terms</a></li>
+                            <li><a href="src/components/organisms/Footer">Privacy</a></li>
+                            <li><a href="src/components/organisms/Footer">Cookies</a></li>
+                            <li><a href="src/components/organisms/Footer">Licenses</a></li>
+                            <li><a href="src/components/organisms/Footer">Settings</a></li>
+                            <li><a href="src/components/organisms/Footer">Contact</a></li>
                         </ul>
                     </div>
 

@@ -1,9 +1,8 @@
-import { Divider, Typography } from "@mui/material";
-import React from "react";
-import Footer from "../../Footer/Footer";
-import ProfileCard from "../../organisms/ProfileCard/ProfileCard";
-import StatsCard from "../../StatsCard";
-import AnimatedPage from "../AnimatedPage";
+import {Divider, Typography} from '@mui/material'
+import React from 'react'
+import ProfileCard from '../../molecules/ProfileCard/ProfileCard'
+import StatsCard from '../../molecules/StatsCard/StatsCard'
+import AnimatedPage from '../AnimatedPage'
 import Fade from "react-reveal/Fade";
 
 // Inspiration: https://dribbble.com/shots/18973465-Yoora-About-page
@@ -35,7 +34,7 @@ export default function AboutPage() {
           <div className="flex justify-center text-center dark:bg-custom-dark-2">
             <div className="grid lg:grid-cols-4 sm:grid-cols-2 xs:grid-cols-1 gap-8 h-fit pt-20">
               <ProfileCard
-                title="Sascha Zize Buthelezi"
+                title="Sascha Zesty🏳‍🌈 Buthelezi"
                 image="/image/sascha.jpg"
               />
               <ProfileCard
