@@ -22,12 +22,12 @@ export default function AboutPage() {
           </div>
 
           {/* Statistics section */}
-          <div>
+          <div className="px-6 flex justify-center text-center dark:bg-custom-dark-2">
             <StatsCard />
           </div>
 
-          <div>
-            <Typography variant="h3">Meet the Team</Typography>
+          <div className="text-center pt-32">
+            <Typography variant="h2" >Meet the Team</Typography>
           </div>
 
           <Divider variant="middle" />
