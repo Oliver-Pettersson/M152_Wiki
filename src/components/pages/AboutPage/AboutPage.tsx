@@ -1,6 +1,6 @@
 import {Divider, Typography} from '@mui/material'
 import React from 'react'
-import Footer from '../../Footer/Footer'
+import Footer from '../../organisms/Footer/Footer'
 import ProfileCard from '../../organisms/ProfileCard/ProfileCard'
 import StatsCard from '../../StatsCard'
 import AnimatedPage from '../AnimatedPage'
@@ -58,7 +58,7 @@ export default function AboutPage() {
 
                 <div className='flex justify-center text-center dark:bg-custom-dark-2 bg-gray-100'>
                     <div className="grid lg:grid-cols-4 sm:grid-cols-2 xs:grid-cols-1 gap-8 h-fit pt-20">
-                        <ProfileCard title="Sascha Zize Buthelezi" image="/image/sascha.jpg"/>
+                        <ProfileCard title="Sascha Zesty🏳‍🌈 Buthelezi" image="/image/sascha.jpg"/>
                         <ProfileCard title="💣liver Yngve Akbar Petterss💣n" image="/image/oliver.jpg"/>
                         <ProfileCard title="Davide Leandro Marcoli" image="/image/davide.jpg"/>
                         <ProfileCard title="Andrin Klarer" image="/image/andrin.png"/>

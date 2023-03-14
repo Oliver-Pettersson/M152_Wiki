@@ -6,7 +6,7 @@ import React from 'react'
 import ScriptImporter from "../../../ScriptImporter";
 import StoryBoardItem from "../../../StoryBoardItem";
 import "./VideoPage_template.css";
-import Footer from "../../../Footer/Footer";
+import Footer from "../../../organisms/Footer/Footer";
 import AnimatedPage from "../../AnimatedPage";
 
 function VideoDetail() {
