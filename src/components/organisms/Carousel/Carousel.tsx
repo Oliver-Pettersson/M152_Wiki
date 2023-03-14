@@ -12,6 +12,11 @@ const config = {
     touchEventOptions: {passive: true},  // options for touch listeners (*See Details*)
 }
 
+const iframeCoverStyle: React.CSSProperties = {
+  zIndex: 5,
+  position: "absolute"
+}
+
 export default function Carousel() {
     const handlers = useSwipeable({
         onSwiped: (eventData: any) => {
@@ -63,35 +68,35 @@ export default function Carousel() {
       />
       <div className="cards">
         <label className="card" id="song-1">
-          <img
+        {(activeImage === 4 || activeImage === 2) && <div onClick={() => setActiveImage(1)} className="card-img" style={iframeCoverStyle}></div>}
+          <iframe
             className="card-img"
             onClick={() => setActiveImage(1)}
-            src="https://images.unsplash.com/photo-1530651788726-1dbf58eeef1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=882&q=80"
-            alt="song"
+            src="https://www.youtube.com/embed/rf8YebDBcbY"
           />
         </label>
         <label className="card" id="song-2">
-          <img
+        {(activeImage === 3 || activeImage === 1) && <div onClick={() => setActiveImage(2)} className="card-img" style={iframeCoverStyle}></div>}
+          <iframe
             className="card-img"
             onClick={() => setActiveImage(2)}
-            src="https://images.unsplash.com/photo-1559386484-97dfc0e15539?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
-            alt="song"
+            src="https://www.youtube.com/embed/rf8YebDBcbY"
           />
         </label>
         <label className="card" id="song-3">
-          <img
+        {(activeImage === 2 || activeImage === 4) && <div onClick={() => setActiveImage(3)} className="card-img" style={iframeCoverStyle}></div>}
+          <iframe
             className="card-img"
             onClick={() => setActiveImage(3)}
-            src="https://images.unsplash.com/photo-1533461502717-83546f485d24?ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
-            alt="song"
+            src="https://www.youtube.com/embed/rf8YebDBcbY"
           />
         </label>
         <label className="card" id="song-4">
-          <img
+          {(activeImage === 3 || activeImage === 1) && <div onClick={() => setActiveImage(4)} className="card-img" style={iframeCoverStyle}></div>}
+          <iframe
             className="card-img"
             onClick={() => setActiveImage(4)}
-            src="https://images.unsplash.com/photo-1498094142928-340247edf22f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1888&q=80"
-            alt="song"
+            src="https://www.youtube.com/embed/rf8YebDBcbY"
           />
         </label>
       </div>

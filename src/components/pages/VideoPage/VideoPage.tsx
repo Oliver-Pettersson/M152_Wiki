@@ -33,15 +33,6 @@ export default function VideoPage() {
   return (
     <>
       <Carousel />
-      <div className="bg-orange-400">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum quibusdam doloribus optio repudiandae delectus nemo exercitationem natus, eum odit error?</p>
-      </div>
-        <Canvas>
-            <ambientLight />
-            <pointLight position={[10, 10, 10]} />
-            <Box position={[-1.2, 0, 0]} />
-            <Box position={[1.2, 0, 0]} />
-        </Canvas>
       <VideoZone/>
     </>
   )
