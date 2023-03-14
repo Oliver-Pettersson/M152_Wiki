@@ -20,7 +20,6 @@ function App() {
                         <Route path="/videos" element={<VideoDetail/>}/>
                     </Routes>
                 </BrowserRouter>
-                <Footer/>
         </div>
     );
 }
