@@ -8,7 +8,7 @@ interface PropsType {
 export default function VideoCard({img, desc} : PropsType) {
   return (
     <Card sx={{margin: "10px"}}>
-        <CardMedia image={img} sx={{height: 300}} />
+        <CardMedia component={"iframe"} image={img} sx={{height: 300}} />
         <CardContent>
             <Typography variant='body2'>{desc}</Typography>
             <CardActions>
