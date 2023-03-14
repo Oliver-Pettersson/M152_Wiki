@@ -11,7 +11,7 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import {BsFillMoonStarsFill, BsSun} from "react-icons/all";
-import {ColorModeContext} from "../StyledApp";
+import {ColorModeContext} from "../../../StyledApp";
 import {useTheme} from "@mui/material";
 import {useNavigate} from "react-router-dom";
 
@@ -29,7 +29,7 @@ const pages = [{
     href: '/media',
 }];
 
-function ResponsiveAppBar() {
+function Navbar() {
     const theme = useTheme()
     const colorMode = React.useContext(ColorModeContext)
 
@@ -164,4 +164,4 @@ function ResponsiveAppBar() {
     );
 }
 
-export default ResponsiveAppBar;
+export default Navbar;
