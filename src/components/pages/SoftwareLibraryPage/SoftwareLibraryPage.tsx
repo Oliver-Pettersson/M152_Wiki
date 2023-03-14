@@ -1,6 +1,6 @@
 import React from 'react';
 import {Container, Typography} from "@mui/material";
-import SoftwareLibraryCardComponent from "../../SoftwareLibraryCardComponent";
+import SoftwareLibraryCard from "../../molecules/SoftwareLibraryCard/SoftwareLibraryCard";
 import AnimatedPage from '../AnimatedPage';
 
 export default function SoftwareLibraryPage() {
@@ -77,7 +77,7 @@ export default function SoftwareLibraryPage() {
 
                     {/*<br/>*/}
 
-                    <SoftwareLibraryCardComponent
+                    <SoftwareLibraryCard
                         text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet finibus enim. In\n" +
                             "                            hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n" +
                             "                            Suspendisse luctus lacus ac dui fringilla euismod. Proin euismod, justo id molestie\n" +
@@ -100,7 +100,7 @@ export default function SoftwareLibraryPage() {
 
                     <br/>
 
-                    <SoftwareLibraryCardComponent
+                    <SoftwareLibraryCard
                         text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet finibus enim. In\n" +
                             "                            hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n" +
                             "                            Suspendisse luctus lacus ac dui fringilla euismod. Proin euismod, justo id molestie\n" +

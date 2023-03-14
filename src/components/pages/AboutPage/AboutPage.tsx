@@ -1,9 +1,8 @@
-import { Divider, Typography } from "@mui/material";
-import React from "react";
-import Footer from "../../organisms/Footer/Footer";
-import ProfileCard from "../../organisms/ProfileCard/ProfileCard";
-import StatsCard from "../../StatsCard";
-import AnimatedPage from "../AnimatedPage";
+import {Divider, Typography} from '@mui/material'
+import React from 'react'
+import ProfileCard from '../../molecules/ProfileCard/ProfileCard'
+import StatsCard from '../../molecules/StatsCard/StatsCard'
+import AnimatedPage from '../AnimatedPage'
 import Fade from "react-reveal/Fade";
 
 // Inspiration: https://dribbble.com/shots/18973465-Yoora-About-page
