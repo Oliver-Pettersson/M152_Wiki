@@ -4,16 +4,11 @@ import React, { Suspense } from 'react'
 import "./VideoDetail.css";
 import StoryBoardItem from "../../molecules/StoryBoardItem/StoryBoardItem";
 import AnimatedPage from "../../pages/AnimatedPage";
-import { useGLTF } from '@react-three/drei/useGLTF'
-import { Canvas } from "@react-three/fiber";
-import Model from "../../../model/3d_objects.jsx";
-import asyncComponent from "../../../model/AsyncComponent";
+import { useGLTF, PerspectiveCamera, OrbitControls, Preload } from '@react-three/drei'
+import { Canvas } from '@react-three/fiber'
+import { Model } from "../../../../public/model/3d_objects.tsx";
 
 function VideoDetail() {
-
-    const _3DModel = asyncComponent(() => {
-        return import("../../../model/3d_objects.jsx")
-    })
 
     return (
         <AnimatedPage>
@@ -52,13 +47,17 @@ function VideoDetail() {
 
                 <div className="divider"></div>
 
-                <Canvas style={{ background: "#171717" }}>
+                <Canvas frameloop="demand"
+                shadows
+                camera={{position: [20, 3, 5], fov: 25}}
+                gl={{ preserveDrawingBuffer: true}}>
                     <Suspense fallback={null}>
-                        <ambientLight />
-                        <mesh>
-                            <Model/>
-                        </mesh>
+                        <OrbitControls enableZoom={false} 
+                        maxPolarAngle={Math.PI / 2}
+                        minPolarAngle={Math.PI / 2}/>
+                        <Model/>
                     </Suspense>
+                    <Preload all />
                 </Canvas>
 
                 {/* Story boards below  */}
