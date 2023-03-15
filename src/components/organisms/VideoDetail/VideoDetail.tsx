@@ -1,12 +1,19 @@
 import {Typography} from "@mui/material";
 import Fade from 'react-reveal/Fade';
-
-import React from 'react'
-import StoryBoardItem from "../../molecules/StoryBoardItem/StoryBoardItem";
+import React, { Suspense } from 'react'
 import "./VideoDetail.css";
+import StoryBoardItem from "../../molecules/StoryBoardItem/StoryBoardItem";
 import AnimatedPage from "../../pages/AnimatedPage";
+import { useGLTF } from '@react-three/drei/useGLTF'
+import { Canvas } from "@react-three/fiber";
+import Model from "../../../model/3d_objects.jsx";
+import asyncComponent from "../../../model/AsyncComponent";
 
 function VideoDetail() {
+
+    const _3DModel = asyncComponent(() => {
+        return import("../../../model/3d_objects.jsx")
+    })
 
     return (
         <AnimatedPage>
@@ -44,6 +51,15 @@ function VideoDetail() {
                 </div>
 
                 <div className="divider"></div>
+
+                <Canvas style={{ background: "#171717" }}>
+                    <Suspense fallback={null}>
+                        <ambientLight />
+                        <mesh>
+                            <Model/>
+                        </mesh>
+                    </Suspense>
+                </Canvas>
 
                 {/* Story boards below  */}
                 <div className="storyboard-title-wrapper">
