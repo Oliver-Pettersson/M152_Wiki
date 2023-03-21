@@ -1,15 +1,11 @@
-import { useWindowWidth } from "@react-hook/window-size";
 import React from "react";
 import VideoCard from "../../molecules/VideoCard/VideoCard";
 
 const VideoZone = () => {
-  const width = useWindowWidth();
   return (
     <>
       <div
-        className={
-          width > 600 ? "grid gap-4 grid-cols-2" : "grid gap-4 grid-cols-1"
-        }
+        className={"grid gap-4 grid-cols-1 md:grid-cols-2"}
       >
         <VideoCard
           img="https://www.youtube.com/embed/rf8YebDBcbY"
