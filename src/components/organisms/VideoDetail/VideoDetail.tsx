@@ -1,12 +1,14 @@
 import {Typography} from "@mui/material";
 import Fade from 'react-reveal/Fade';
-import React, { Suspense } from 'react'
+import React, {Suspense, lazy} from 'react'
 import "./VideoDetail.css";
 import StoryBoardItem from "../../molecules/StoryBoardItem/StoryBoardItem";
 import AnimatedPage from "../../pages/AnimatedPage";
-import { useGLTF, PerspectiveCamera, OrbitControls, Preload } from '@react-three/drei'
-import { Canvas } from '@react-three/fiber'
-import { Model } from "../../../../public/model/3d_objects.tsx";
+import {OrbitControls, Preload} from '@react-three/drei'
+import {Canvas} from '@react-three/fiber'
+import {Model} from "../../../../public/model/3d_objects.tsx";
+
+const LazyModel = React.lazy(() => import('../../../../public/model/3d_objects.tsx'));
 
 function VideoDetail() {
 
@@ -15,17 +17,20 @@ function VideoDetail() {
             <div className="page-container w-full">
 
                 <div className="title-wrapper">
-                <Fade right>
-                    <Typography variant="h1" className="title">Docker leicht gemacht</Typography>
-                    <div className="point"/>
-                </Fade>
+                    <Fade right>
+                        <Typography variant="h1" className="title">Docker leicht gemacht</Typography>
+                        <div className="point"/>
+                    </Fade>
                 </div>
 
                 <div className="video-description">
                     <p className="video-description-text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sed provident inventore ipsa sapiente quos, officiis molestias temporibus exercitationem ipsam.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus doloribus itaque, nihil reiciendis in ea culpa aliquid! Commodi, natus quam.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sed provident inventore ipsa sapiente quos, officiis molestias temporibus exercitationem ipsam.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sed provident inventore ipsa
+                        sapiente quos, officiis molestias temporibus exercitationem ipsam.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus doloribus itaque, nihil
+                        reiciendis in ea culpa aliquid! Commodi, natus quam.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sed provident inventore ipsa
+                        sapiente quos, officiis molestias temporibus exercitationem ipsam.
                     </p>
                 </div>
 
@@ -48,16 +53,14 @@ function VideoDetail() {
                 <div className="divider"></div>
 
                 <Canvas frameloop="demand"
-                shadows
-                camera={{position: [20, 3, 5], fov: 25}}
-                gl={{ preserveDrawingBuffer: true}}>
+                        shadows
+                        camera={{position: [20, 3, 5], fov: 25}}
+                        gl={{preserveDrawingBuffer: true}}>
                     <Suspense fallback={null}>
-                        <OrbitControls enableZoom={false} 
-                        maxPolarAngle={Math.PI / 2}
-                        minPolarAngle={Math.PI / 2}/>
+                        <OrbitControls enableZoom={true} enablePan={true}/>
                         <Model/>
                     </Suspense>
-                    <Preload all />
+                    <Preload all/>
                 </Canvas>
 
                 {/* Story boards below  */}
