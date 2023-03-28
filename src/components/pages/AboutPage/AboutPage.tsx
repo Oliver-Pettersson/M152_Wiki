@@ -15,14 +15,14 @@ export default function AboutPage() {
           <div className="title-wrapper pb-16" >
             <Fade right>
               <Typography variant="h1" className="title">
-                We build bridges between companies and customers
+                Create time for advice
               </Typography>
               <div className="point" />
             </Fade>
           </div>
 
           {/* Statistics section */}
-          <div className="px-6 flex justify-center text-center dark:bg-custom-dark-2 child">
+          <div className="px-6 flex justify-center text-center bg-custom-dark-2 child">
             <StatsCard />
           </div>
 
@@ -30,7 +30,7 @@ export default function AboutPage() {
             <Typography variant="h2">Meet the Team</Typography>
           </div>
 
-          <div className="flex justify-center text-center dark:bg-custom-dark-2">
+          <div className="flex justify-center text-center">
             <div className="grid lg:grid-cols-4 sm:grid-cols-2 xs:grid-cols-1 gap-8 h-fit pt-12 pb-12">
               <ProfileCard
                 title="Sascha Zesty🏳‍🌈 Buthelezi"

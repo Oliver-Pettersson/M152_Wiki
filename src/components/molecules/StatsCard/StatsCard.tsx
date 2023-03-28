@@ -7,23 +7,24 @@ function StatsCard(props: any) {
   return (
     <>
       <div className="grid lg:grid-cols-3 sm:grid-cols-3 xs:grid-cols-3 gap-16 h-fit pt-16 pb-16 text-center">
-        <div className="items-center flex flex-col border-t-4 border-[#62DB44] px-3 pt-4 w-60">
+        
+        <div className="items-center flex flex-col border-t-4 border-[#62DB44] px-3 pt-4 md:w-40 lg:w-60">
           <Typography>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Customers inspired by us
           </Typography>
           <Typography sx={{fontSize: "2.5rem" }}>55K+</Typography>
         </div>
-        <div className="items-center flex flex-col border-t-4 border-[#62DB44] px-3 pt-4 w-60">
+        <div className="items-center flex flex-col border-t-4 border-[#62DB44] px-3 pt-4 md:w-40 lg:w-60">
           <Typography>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Many years of success
           </Typography>
-          <Typography sx={{fontSize: "2.5rem" }}>12K+</Typography>
+          <Typography sx={{fontSize: "2.5rem" }}>12+</Typography>
         </div>
-        <div className="items-center flex flex-col border-t-4 border-[#62DB44] px-3 pt-4 w-60">
+        <div className="items-center flex flex-col border-t-4 border-[#62DB44] px-3 pt-4  md:w-40 lg:w-60">
           <Typography>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Experts for your experience
           </Typography>
-          <Typography sx={{fontSize: "2.5rem" }}>20K+</Typography>
+          <Typography sx={{fontSize: "2.5rem" }}>4+</Typography>
         </div>
       </div>
     </>
