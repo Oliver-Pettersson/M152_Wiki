@@ -7,6 +7,7 @@ import VideoPage from "./components/pages/VideoPage/VideoPage";
 import SoftwareLibraryPage from "./components/pages/SoftwareLibraryPage/SoftwareLibraryPage";
 import VideoDetail from "./components/organisms/VideoDetail/VideoDetail";
 import Footer from "./components/organisms/Footer/Footer";
+import CopyrightPage from "./components/pages/CopyrightPage/CopyrightPage";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                         <Route path="/about" element={<AboutPage/>}/>
                         <Route path="/software-library" element={<SoftwareLibraryPage/>}/>
                         <Route path="/videos" element={<VideoDetail/>}/>
+                        <Route path="/copyight" element={<CopyrightPage/>}/>
                     </Routes>
                 </BrowserRouter>
         </div>
