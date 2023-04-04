@@ -37,12 +37,10 @@ export default function SoftwareLibraryCard({
                     {imageDirection === 'left' ? <div className={`p-12 ${paddingText}`}>
                         {text}
                     </div> : null}
-                    <div
-                        className={`bg-white dark:bg-custom-dark-1 h-96 w-96 z-10 flex flex-col items-center ${borderRadiusImageRadius}`}>
-                        <img style={{maxWidth: 'none', objectFit: 'cover'}}
-                             className={`${marginImage} h-[22rem] w-80 rounded-3xl z-20`}
+                    <img style={{maxWidth: 'none', objectFit: 'cover'}}
+                             className={`${marginImage} h-[22rem] w-82 rounded-3xl z-20`}
                              src={image}/>
-                    </div>
+                    
                     {imageDirection === 'right' ? <div className={`p-12 ${paddingText}`}>
                         {text}
                     </div> : null}
