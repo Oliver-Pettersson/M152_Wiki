@@ -54,10 +54,10 @@ function VideoDetail() {
 
                 <Canvas frameloop="demand"
                         shadows
-                        camera={{position: [20, 3, 5], fov: 25}}
+                        camera={{position: [30, 3, 5], fov: 25}}
                         gl={{preserveDrawingBuffer: true}}>
                     <Suspense fallback={null}>
-                        <OrbitControls enableZoom={true} enablePan={true}/>
+                        <OrbitControls enableZoom={false} enablePan={true}/>
                         <Model/>
                     </Suspense>
                     <Preload all/>
