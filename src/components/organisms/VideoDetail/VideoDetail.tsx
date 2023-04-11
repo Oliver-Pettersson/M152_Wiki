@@ -1,10 +1,14 @@
 import {Typography} from "@mui/material";
 import Fade from 'react-reveal/Fade';
-
-import React from 'react'
-import StoryBoardItem from "../../molecules/StoryBoardItem/StoryBoardItem";
+import React, {Suspense, lazy} from 'react'
 import "./VideoDetail.css";
+import StoryBoardItem from "../../molecules/StoryBoardItem/StoryBoardItem";
 import AnimatedPage from "../../pages/AnimatedPage";
+import {OrbitControls, Preload} from '@react-three/drei'
+import {Canvas} from '@react-three/fiber'
+import {Model} from "../../../../public/model/3d_objects.tsx";
+
+const LazyModel = React.lazy(() => import('../../../../public/model/3d_objects.tsx'));
 
 function VideoDetail() {
 
@@ -47,6 +51,17 @@ function VideoDetail() {
                 </div>
 
                 <div className="divider"></div>
+
+                <Canvas frameloop="demand"
+                        shadows
+                        camera={{position: [20, 3, 5], fov: 25}}
+                        gl={{preserveDrawingBuffer: true}}>
+                    <Suspense fallback={null}>
+                        <OrbitControls enableZoom={true} enablePan={true}/>
+                        <Model/>
+                    </Suspense>
+                    <Preload all/>
+                </Canvas>
 
                 {/* Story boards below  */}
                 <div className="storyboard-title-wrapper">
