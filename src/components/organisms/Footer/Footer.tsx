@@ -1,4 +1,4 @@
-import { TextField, Typography } from '@mui/material'
+import {TextField} from '@mui/material'
 import React from 'react'
 import "./Footer.css"
 
@@ -15,7 +15,8 @@ function Footer() {
                 <div className=" grid grid-rows-1 grid-flow-col">
                     <div className="row-span-1 col-span-2">
                         <p className="call-to-action-title">Sign up to our newsletter</p>
-                        <p className="call-to-action-text">Stay up to date with the latest news, announcements, and articles.</p>
+                        <p className="call-to-action-text">Stay up to date with the latest news, announcements, and
+                            articles.</p>
                     </div>
 
                     <div className="input row-span-1 col-span-3">
@@ -38,7 +39,7 @@ function Footer() {
                             <li><a href="src/components/organisms/Footer">Tutorials</a></li>
                             <li><a href="src/components/organisms/Footer">Pricing</a></li>
                             <li><a href="src/components/organisms/Footer">Releases</a></li>
-                            
+
                         </ul>
                     </div>
 
@@ -94,7 +95,8 @@ function Footer() {
 
                 <div className="under-section grid grid-rows-1 grid-flow-col">
                     <div>
-                        <p className="copyright-text row-span-1 col-span-2">© 2044 Untitled Company. All rights reserved.</p>
+                        <p className="copyright-text row-span-1 col-span-2">© 2044 Untitled Company. All rights
+                            reserved.</p>
                     </div>
 
                     <div className="icons row-span-1 col-span-2">

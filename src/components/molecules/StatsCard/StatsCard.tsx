@@ -1,34 +1,34 @@
-import {Typography} from '@mui/material'
-import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
-import PsychologyIcon from '@mui/icons-material/Psychology';
-import GroupIcon from '@mui/icons-material/Group';
-import React from 'react'
+import {Typography} from "@mui/material";
+import "./StatsCard.css"
 
 function StatsCard(props: any) {
     return (
         <>
-            <div className="grid lg:grid-cols-3 sm:grid-cols-1 xs:grid-cols-1 h-fit pt-20">
-                <div className="row-span-2 col-span-3 grid-cols-3 bg-blue-400">
-                    <AttachMoneyIcon sx={{display: {xs: 'none', md: 'flex'}, mr: 1}}/>
-                    <Typography>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi sequi maiores debitis
-                        odio ex a!</Typography>
-                    <Typography>55K+</Typography>
+            <div className="grid lg:grid-cols-3 sm:grid-cols-3 xs:grid-cols-3 gap-16 h-fit pt-16 pb-16 text-center">
+                <div
+                    className="stat-card items-center flex flex-col border-t-4 border-[#62DB44] px-3 pt-4 md:w-40 lg:w-60">
+                    <Typography>
+                        Customers inspired by us
+                    </Typography>
+                    <Typography sx={{fontSize: "2.5rem"}}>55K+</Typography>
                 </div>
-                <div className="row-span-2 col-span-3 grid-cols-3 bg-red-400">
-                    <PsychologyIcon sx={{display: {xs: 'none', md: 'flex'}, mr: 1}}/>
-                    <Typography>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi sequi maiores debitis
-                        odio ex a!</Typography>
-                    <Typography>12K+</Typography>
+                <div
+                    className="stat-card items-center flex flex-col border-t-4 border-[#62DB44] px-3 pt-4 md:w-40 lg:w-60">
+                    <Typography>
+                        Many years of success
+                    </Typography>
+                    <Typography sx={{fontSize: "2.5rem"}}>12+</Typography>
                 </div>
-                <div className="row-span-2 col-span-3 grid-cols-3 bg-green-400">
-                    <GroupIcon sx={{display: {xs: 'none', md: 'flex'}, mr: 1}}/>
-                    <Typography>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi sequi maiores debitis
-                        odio ex a!</Typography>
-                    <Typography>20K+</Typography>
+                <div
+                    className="stat-card items-center flex flex-col border-t-4 border-[#62DB44] px-3 pt-4  md:w-40 lg:w-60">
+                    <Typography>
+                        Experts for your experience
+                    </Typography>
+                    <Typography sx={{fontSize: "2.5rem"}}>4+</Typography>
                 </div>
             </div>
         </>
-    )
+    );
 }
 
-export default StatsCard
+export default StatsCard;
