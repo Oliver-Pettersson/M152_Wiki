@@ -58,7 +58,7 @@ export default function VideoComparisonMatrix() {
       </tr>
       <tr>
         <td className="border border-gray-600 p-2 font-bold">Motion Graphics</td>
-        <td className="border border-gray-600 p-2">Yes</td>
+        <td className="border border-gray-600 p-2">Basic</td>
         <td className="border border-gray-600 p-2">Basic</td>
         <td className="border border-gray-600 p-2">Basic</td>
         <td className="border border-gray-600 p-2">Basic</td>
