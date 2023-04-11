@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Typography } from "@mui/material";
+import {Container, Typography} from "@mui/material";
 import SoftwareLibraryCard from "../../molecules/SoftwareLibraryCard/SoftwareLibraryCard";
 import AnimatedPage from "../AnimatedPage";
 import AudioComparisonMatrix from "../../molecules/AudioComparisonMatrix/AudioComparisonMatrix";

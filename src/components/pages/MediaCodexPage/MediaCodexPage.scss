@@ -1,0 +1,124 @@
+:root {
+  --lossy-color: #ff6666;
+  --lossless-color: #66ff66;
+  --uncompressed-color: #66ccff;
+}
+
+:root {
+  --good-quality-color: #ffcc66;
+  --better-than-mp3-color: /* between good and very high */
+          #ffff66;
+  --very-high-quality-color: #99ff66;
+  --extremely-high-quality-color: #66ff99;
+}
+
+:root {
+  --low-quality-color: #ff6666;
+  --standard-quality-color: #ffff66;
+  --better-than-mpeg2-color: /* between standard and medium */
+          #ffcc66;
+  --medium-quality-color: #ffcc66;
+  --better-than-mpeg4-color: /* between standard and very high */
+          #99ff66;
+  --high-quality-color: #99ff66;
+}
+
+.mediacodexpage {
+
+
+  .lossy {
+    color: var(--lossy-color);
+  }
+
+  .lossless {
+    color: var(--lossless-color);
+  }
+
+  .uncompressed {
+    color: var(--uncompressed-color);
+  }
+
+  .good {
+    color: var(--good-quality-color);
+  }
+
+  .better-than-mp3 {
+    color: var(--better-than-mp3-color);
+  }
+
+  .very-high {
+    color: var(--very-high-quality-color);
+  }
+
+  .extremely-high {
+    color: var(--extremely-high-quality-color);
+  }
+
+  .low {
+    color: var(--low-quality-color);
+  }
+
+  .medium {
+    color: var(--medium-quality-color);
+  }
+
+  .better-than-mpeg2 {
+    color: var(--better-than-mpeg2-color);
+  }
+
+  .standard {
+    color: var(--standard-quality-color);
+  }
+
+  .better-than-mpeg4 {
+    color: var(--better-than-mpeg4-color);
+  }
+
+  .high {
+    color: var(--high-quality-color);
+  }
+
+  table {
+    border-collapse: collapse;
+    margin: 20px;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    width: 100%;
+  }
+
+  thead {
+    background-color: #333;
+    color: #fff;
+  }
+
+  th,
+  td {
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  th {
+    text-transform: uppercase;
+  }
+
+  tr:nth-child(even) {
+    @apply text-custom-dark-1 bg-[#f2f2f2] dark:text-custom-light-1 dark:bg-[#1f1f1f];
+  }
+
+  tbody tr td:nth-child(1) {
+    @apply font-bold;
+  }
+
+  tbody tr td:nth-child(2),
+  tbody tr td:nth-child(3) {
+    @apply font-extrabold brightness-[80%];
+  }
+
+  @media (max-width: 768px) {
+    table {
+      font-size: 0.8em;
+    }
+  }
+
+}

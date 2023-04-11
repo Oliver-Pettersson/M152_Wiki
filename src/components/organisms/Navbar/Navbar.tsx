@@ -26,7 +26,7 @@ const pages = [{
     href: '/software-library',
 }, {
     title: 'Media Codex',
-    href: '/media',
+    href: '/media-codex',
 }];
 
 function Navbar() {
