@@ -19,7 +19,7 @@ export default function AudioComparisonMatrix() {
                 <td className="border border-gray-600 p-2">Free</td>
                 <td className="border border-gray-600 p-2">Subscription</td>
                 <td className="border border-gray-600 p-2">$199.99</td>
-                <td className="border border-gray-600 p-2">$24.92/mo</td>
+                <td className="border border-gray-600 p-2">Subscription</td>
                 <td className="border border-gray-600 p-2">$99-$749</td>
             </tr>
             <tr>
