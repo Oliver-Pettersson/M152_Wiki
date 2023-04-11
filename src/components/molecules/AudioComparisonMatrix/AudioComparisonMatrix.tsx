@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ComparisonMatrix() {
+export default function AudioComparisonMatrix() {
   return (
     <table className="border border-collapse w-full">
       <thead>

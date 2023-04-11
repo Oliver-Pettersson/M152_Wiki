@@ -1,5 +1,5 @@
 import React from 'react'
-import ComparisonMatrix from '../../molecules/ComparisonMatrix/ComparisonMatrix'
+import AudioComparisonMatrix from '../../molecules/AudioComparisonMatrix/AudioComparisonMatrix'
 
 export default function MediaCodexPage() {
   return (

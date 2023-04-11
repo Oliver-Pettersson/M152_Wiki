@@ -2,7 +2,8 @@ import React from "react";
 import { Container, Typography } from "@mui/material";
 import SoftwareLibraryCard from "../../molecules/SoftwareLibraryCard/SoftwareLibraryCard";
 import AnimatedPage from "../AnimatedPage";
-import ComparisonMatrix from "../../molecules/ComparisonMatrix/ComparisonMatrix";
+import AudioComparisonMatrix from "../../molecules/AudioComparisonMatrix/AudioComparisonMatrix";
+import VideoComparisonMatrix from "../../molecules/VideoComparisonMatrix/VideoComparisonMatrix";
 
 export default function SoftwareLibraryPage() {
   return (
@@ -12,74 +13,6 @@ export default function SoftwareLibraryPage() {
           Evaluation
         </Typography>
         <Container>
-          <br />
-
-          {/*<div className='w-full rounded-l-full rounded-r-full' style={{backgroundColor: '#EBB5B5'}}>*/}
-          {/*    <div className='flex flex-row'>*/}
-          {/*        <div*/}
-          {/*            className='bg-white dark:bg-custom-dark-1 h-96 w-96 z-10 flex flex-col items-center'>*/}
-          {/*            <img style={{maxWidth: 'none', objectFit: 'fill'}}*/}
-          {/*                 className='mr-[2rem] h-[22rem] w-80 rounded-3xl z-20'*/}
-          {/*                 src='https://source.unsplash.com/random/?Tree'/>*/}
-          {/*        </div>*/}
-          {/*        <div className='p-12 pr-64'>*/}
-          {/*            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet finibus enim. In*/}
-          {/*            hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit.*/}
-          {/*            Suspendisse luctus lacus ac dui fringilla euismod. Proin euismod, justo id molestie*/}
-          {/*            congue, ex leo accumsan est, vitae egestas felis nulla id ex. Donec porta tortor*/}
-          {/*            suscipit purus consequat, ac cursus dolor luctus. Etiam interdum purus sed urna*/}
-          {/*            venenatis tristique. Donec porta leo sem, in varius arcu efficitur ut. Maecenas vitae mi*/}
-          {/*            a nulla vehicula dictum. Aliquam quis turpis eget nisi commodo faucibus. Ut volutpat*/}
-          {/*            nunc vel porta interdum. Vestibulum metus massa, fermentum eu elementum id, congue non*/}
-          {/*            ex. Sed ex odio, luctus ac vestibulum et, tempus iaculis arcu.*/}
-          {/*            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet finibus enim. In*/}
-          {/*            hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit.*/}
-          {/*            Suspendisse luctus lacus ac dui fringilla euismod. Proin euismod, justo id molestie*/}
-          {/*            congue, ex leo accumsan est, vitae egestas felis nulla id ex. Donec porta tortor*/}
-          {/*            suscipit purus consequat, ac cursus dolor luctus. Etiam interdum purus sed urna*/}
-          {/*            venenatis tristique. Donec porta leo sem, in varius arcu efficitur ut. Maecenas vitae mi*/}
-          {/*            a nulla vehicula dictum. Aliquam quis turpis eget nisi commodo faucibus. Ut volutpat*/}
-          {/*            nunc vel porta interdum. Vestibulum metus massa, fermentum eu elementum id, congue non*/}
-          {/*            ex. Sed ex odio, luctus ac vestibulum et, tempus iaculis arcu.*/}
-          {/*        </div>*/}
-          {/*    </div>*/}
-          {/*</div>*/}
-
-          {/*<br/>*/}
-
-          {/*<div className='w-full rounded-l-full rounded-r-full' style={{backgroundColor: '#EBB5B5'}}>*/}
-          {/*    <div className='flex flex-row'>*/}
-          {/*        <div className='p-12 pl-64'>*/}
-          {/*            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet finibus enim. In*/}
-          {/*            hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit.*/}
-          {/*            Suspendisse luctus lacus ac dui fringilla euismod. Proin euismod, justo id molestie*/}
-          {/*            congue, ex leo accumsan est, vitae egestas felis nulla id ex. Donec porta tortor*/}
-          {/*            suscipit purus consequat, ac cursus dolor luctus. Etiam interdum purus sed urna*/}
-          {/*            venenatis tristique. Donec porta leo sem, in varius arcu efficitur ut. Maecenas vitae mi*/}
-          {/*            a nulla vehicula dictum. Aliquam quis turpis eget nisi commodo faucibus. Ut volutpat*/}
-          {/*            nunc vel porta interdum. Vestibulum metus massa, fermentum eu elementum id, congue non*/}
-          {/*            ex. Sed ex odio, luctus ac vestibulum et, tempus iaculis arcu.*/}
-          {/*            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet finibus enim. In*/}
-          {/*            hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit.*/}
-          {/*            Suspendisse luctus lacus ac dui fringilla euismod. Proin euismod, justo id molestie*/}
-          {/*            congue, ex leo accumsan est, vitae egestas felis nulla id ex. Donec porta tortor*/}
-          {/*            suscipit purus consequat, ac cursus dolor luctus. Etiam interdum purus sed urna*/}
-          {/*            venenatis tristique. Donec porta leo sem, in varius arcu efficitur ut. Maecenas vitae mi*/}
-          {/*            a nulla vehicula dictum. Aliquam quis turpis eget nisi commodo faucibus. Ut volutpat*/}
-          {/*            nunc vel porta interdum. Vestibulum metus massa, fermentum eu elementum id, congue non*/}
-          {/*            ex. Sed ex odio, luctus ac vestibulum et, tempus iaculis arcu.*/}
-          {/*        </div>*/}
-          {/*        <div*/}
-          {/*            className='bg-white dark:bg-custom-dark-1 h-96 w-96 z-10 flex flex-col items-center justify-center'>*/}
-          {/*            <img style={{maxWidth: 'none', objectFit: 'fill'}}*/}
-          {/*                 className='mx-[2rem] h-80 w-80 rounded-3xl z-20'*/}
-          {/*                 src='https://source.unsplash.com/random/?Tree'/>*/}
-          {/*        </div>*/}
-          {/*    </div>*/}
-          {/*</div>*/}
-
-          {/*<br/>*/}
-
           <SoftwareLibraryCard
             text={
               "Audacity is a free program you can use to edit and record audio on your computer. It works on Windows, Mac, and Linux. You can use it to record sounds from your microphone or other sources, like music or videos. Then, you can cut, copy, and paste parts of the sound, or add effects like noise reduction, equalization, or reverb. Audacity also has tools to help you see what your sound looks like and to work with multiple tracks at the same time. It's easy to use and popular with podcasters, musicians, and sound editors."
@@ -121,7 +54,41 @@ export default function SoftwareLibraryPage() {
             imageDirection={"left"}
           />
           <br />
-          <ComparisonMatrix />
+          <AudioComparisonMatrix />
+          <br />
+          <SoftwareLibraryCard
+            text={
+              "Adobe Premiere Pro is a professional video editing software used by filmmakers, video editors, and content creators to edit and manipulate video footage. It offers a wide range of features including timeline-based editing, color correction, audio editing, visual effects, and transitions. With Premiere Pro, users can create high-quality videos for various purposes such as films, television shows, social media, and online content."
+            }
+            image={"image/logo/Adobe_Premiere_Pro.png"}
+            imageDirection={"left"}
+          />
+          <br />
+          <SoftwareLibraryCard
+            text={
+              "Final Cut Pro X is a professional video editing software exclusively available for Apple's macOS operating system. It offers a range of advanced video editing tools and features, including support for multiple cameras, advanced color grading, and special effects. It is widely used in the film and video production industry."
+            }
+            image={"image/logo/Final_Cut_Pro_X.png"}
+            imageDirection={"right"}
+          />
+          <br />
+          <SoftwareLibraryCard
+            text={
+              "Avid Media Composer is a professional video editing software used for film and television production. It provides a comprehensive set of tools for video editing, such as cutting, trimming, merging, and adding effects and audio. It offers advanced features like support for multiple cameras, advanced color grading, and special effects. It is widely used in the media industry and is available for both macOS and Windows operating systems."
+            }
+            image={"image/logo/Avid_Media_Composer.png"}
+            imageDirection={"left"}
+          />
+          <br />
+          <SoftwareLibraryCard
+            text={
+              "HitFilm Pro is a professional video editing software that provides a comprehensive set of tools for video editing, compositing, and visual effects. It includes advanced features such as support for 3D compositing, particle simulation, and advanced color grading. It is widely used in the film and video production industry and is available for both macOS and Windows operating systems."
+            }
+            image={"image/logo/HitFilm_Pro.svg"}
+            imageDirection={"right"}
+          />
+          <br />
+          <VideoComparisonMatrix />
           <br />
         </Container>
       </div>
