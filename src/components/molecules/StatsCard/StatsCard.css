@@ -1,0 +1,11 @@
+.stat-card {
+    -webkit-transition: -webkit-transform 0.4s;
+	transition: -webkit-transform 0.4s;
+	transition: transform 0.4s;
+	transition: transform 0.4s, -webkit-transform 0.4s;
+}
+
+.stat-card:hover {
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+}
