@@ -1,11 +1,11 @@
 import React from "react";
-import "./MediaCodexPage.css";
+import "./MediaCodexPage.scss";
 import AnimatedPage from "../AnimatedPage";
 
 function MediaCodexPage() {
     return (
         <AnimatedPage>
-            <div className={"flex flex-col items-center justify-center mt-6 mx-12"}>
+            <div className={"mediacodexpage flex flex-col items-center justify-center mt-6 mx-12"}>
                 <h1 className={"text-4xl font-bold"}>Audio Formats</h1>
                 <table>
                     <thead>
