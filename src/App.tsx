@@ -19,7 +19,7 @@ function App() {
                         <Route path="/about" element={<AboutPage/>}/>
                         <Route path="/software-library" element={<SoftwareLibraryPage/>}/>
                         <Route path="/videos" element={<VideoDetail/>}/>
-                        <Route path="/media" element={<MediaCodexPage/>}/>
+                        <Route path="/media-codex" element={<MediaCodexPage/>}/>
                     </Routes>
                 </BrowserRouter>
         </div>
