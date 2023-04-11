@@ -9,7 +9,7 @@ function MediaCodexPage() {
                 <h1 className={"text-4xl font-bold"}>Audio Formats</h1>
                 <table>
                     <thead>
-                    <tr>
+                    <tr className={"text-xl"}>
                         <th>Audio Format</th>
                         <th>Compression</th>
                         <th>Quality</th>
@@ -74,12 +74,10 @@ function MediaCodexPage() {
                     </tbody>
                 </table>
 
-                <br/>
-
-                <h1 className={"text-4xl font-bold"}>Video Formats</h1>
+                <h1 className={"text-4xl font-bold mt-16"}>Video Formats</h1>
                 <table>
                     <thead>
-                    <tr>
+                    <tr className={"text-xl"}>
                         <th>Video Format</th>
                         <th>Compression</th>
                         <th>Quality</th>
