@@ -28,10 +28,10 @@
     "react-icons": "^4.8.0",
     "react-router-dom": "^6.9.0",
     "react-swipeable": "^7.0.0",
-    "react-three": "^0.9.7",
+    "react-three": "^0.8.0",
+    "sass": "^1.61.0",
     "three": "^0.150.1",
-    "valtio": "^1.10.3",
-    "sass": "^1.61.0"
+    "valtio": "^1.10.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

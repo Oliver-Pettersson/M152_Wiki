@@ -58,6 +58,8 @@ export default function SoftwareLibraryPage() {
           <br />
           <AudioComparisonMatrix />
           <br />
+          <br />
+          <br />
           <SoftwareLibraryCard
             title="Adobe Premiere Pro"
             text={
