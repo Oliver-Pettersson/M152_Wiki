@@ -33,18 +33,18 @@ export default function AboutPage() {
                     <div className="flex justify-center text-center">
                         <div className="grid lg:grid-cols-4 sm:grid-cols-2 xs:grid-cols-1 gap-8 h-fit pt-12 pb-12">
                             <ProfileCard
-                                title="Sascha Zesty🏳‍🌈 Buthelezi"
-                                image="/image/saschaw.png"
+                                title="Sascha Buthelezi"
+                                image="/image/sascha.png"
                             />
                             <ProfileCard
-                                title="💣liver Yngve Akbar Petterss💣n"
-                                image="/image/oliverw.png"
+                                title="Oliver Pettersson"
+                                image="/image/oliver.jpg"
                             />
                             <ProfileCard
-                                title="Davide Leandro Marcoli"
-                                image="/image/davidew.png"
+                                title="Davide Marcoli"
+                                image="/image/davide.jpg"
                             />
-                            <ProfileCard title="Andrin Klarer" image="/image/andrinw.png"/>
+                            <ProfileCard title="Andrin Klarer" image="/image/andrin.jpg"/>
                         </div>
                     </div>
                 </div>
