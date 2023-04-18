@@ -1,14 +1,12 @@
-import { Typography } from "@mui/material";
-import { Container } from "@mui/material";
+import {Typography} from "@mui/material";
 import Fade from 'react-reveal/Fade';
 
 import StoryBoardItem from "../../../StoryBoardItem";
 import "./VideoPage_template.css";
 import AnimatedPage from "../../AnimatedPage";
-import { useLoader } from "react-three"
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
+import {useLoader} from "react-three"
+import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader'
 import React from "react";
-import { Canvas } from "@react-three/fiber";
 
 function VideoDetail() {
 
@@ -19,17 +17,20 @@ function VideoDetail() {
             <div className="page-container w-full">
 
                 <div className="title-wrapper">
-                <Fade right>
-                    <Typography variant="h1" className="title">Docker leicht gemacht</Typography>
-                    <div className="point"/>
-                </Fade>
+                    <Fade right>
+                        <Typography variant="h1" className="title">Docker leicht gemacht</Typography>
+                        <div className="point"/>
+                    </Fade>
                 </div>
 
                 <div className="video-description">
                     <p className="video-description-text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sed provident inventore ipsa sapiente quos, officiis molestias temporibus exercitationem ipsam.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus doloribus itaque, nihil reiciendis in ea culpa aliquid! Commodi, natus quam.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sed provident inventore ipsa sapiente quos, officiis molestias temporibus exercitationem ipsam.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sed provident inventore ipsa
+                        sapiente quos, officiis molestias temporibus exercitationem ipsam.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus doloribus itaque, nihil
+                        reiciendis in ea culpa aliquid! Commodi, natus quam.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sed provident inventore ipsa
+                        sapiente quos, officiis molestias temporibus exercitationem ipsam.
                     </p>
                 </div>
 

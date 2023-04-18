@@ -31,47 +31,35 @@ export default function ProfileCard({ title, image }: PropsType) {
   function startTheParty(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
     const target = event.target as HTMLElement;
 
-    switch (image) {
-      case "/image/oliverw.png":
-        party.confetti(target, {
-          shapes: ["bomb", "explosion"],
-          size: party.variation.range(10.5, 3.5),
-          count: party.variation.range(1, 20),
-        });
-        break;
-      case "/image/saschaw.png":
-        party.confetti(target, {
-          shapes: ["kiss", "love"],
-          size: party.variation.range(1, 2),
-          count: party.variation.range(15, 20),
-        });
-        break;
-      case "/image/andrinw.png":
-        party.confetti(target, {
-          shapes: [
-            "cow",
-            "pig",
-            "chicken",
-            "sheep",
-            "horse",
-            "dog",
-            "cat",
-            "fish",
-            "bird",
-            "elephant",
-            "lion",
-            "unicorn",
-            "dragon",
-            "tractor",
-          ],
-          size: party.variation.range(1, 2),
-          count: party.variation.range(10, 20),
-        });
-        break;
-      default:
-        party.confetti(target);
+        switch (image) {
+            case "/image/about/oliverw.png":
+                party.confetti(target, {
+                    shapes: ["bomb", "explosion"],
+                    size: party.variation.range(10.5, 3.5),
+                    count: party.variation.range(1, 20),
+
+                })
+                break;
+            case "/image/about/saschaw.png":
+                party.confetti(target, {
+                    shapes: ["kiss", "love"],
+                    size: party.variation.range(1, 2),
+                    count: party.variation.range(15, 20),
+
+
+                })
+                break;
+            case "/image/about/andrinw.png":
+                party.confetti(target, {
+                    shapes: ["cow", "pig", "chicken", "sheep", "horse", "dog", "cat", "fish", "bird", "elephant", "lion", "unicorn", "dragon", "tractor"],
+                    size: party.variation.range(1, 2),
+                    count: party.variation.range(10, 20),
+                })
+                break;
+            default:
+                party.confetti(target);
+        }
     }
-  }
 
   return (
     <div className="py-4 w-60" onMouseDown={(event) => startTheParty(event)}>
