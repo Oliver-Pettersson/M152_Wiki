@@ -33,7 +33,7 @@ export default function ProfileCard({title, image}: PropsType) {
         const target = event.target as HTMLElement;
 
         switch (image) {
-            case "/image/oliverw.png":
+            case "/image/about/oliverw.png":
                 party.confetti(target, {
                     shapes: ["bomb", "explosion"],
                     size: party.variation.range(10.5, 3.5),
@@ -41,7 +41,7 @@ export default function ProfileCard({title, image}: PropsType) {
 
                 })
                 break;
-            case "/image/saschaw.png":
+            case "/image/about/saschaw.png":
                 party.confetti(target, {
                     shapes: ["kiss", "love"],
                     size: party.variation.range(1, 2),
@@ -50,7 +50,7 @@ export default function ProfileCard({title, image}: PropsType) {
 
                 })
                 break;
-            case "/image/andrinw.png":
+            case "/image/about/andrinw.png":
                 party.confetti(target, {
                     shapes: ["cow", "pig", "chicken", "sheep", "horse", "dog", "cat", "fish", "bird", "elephant", "lion", "unicorn", "dragon", "tractor"],
                     size: party.variation.range(1, 2),

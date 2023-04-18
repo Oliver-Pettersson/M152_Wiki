@@ -72,7 +72,7 @@ function Navbar() {
                             textDecoration: 'none',
                         }}
                     >
-                        SODA Wiki
+                        CodeBytez
                     </Typography>
 
                     <Box sx={{flexGrow: 1, display: {xs: 'flex', md: 'none'}}}>
@@ -104,14 +104,16 @@ function Navbar() {
                                 display: {xs: 'block', md: 'none'},
                             }}
                         >
-                            {pages.map((page) => (
-                                <MenuItem key={page.title} onClick={() => {
-                                    navigate(page.href);
-                                    handleCloseNavMenu
-                                }}>
-                                    <Typography textAlign="center">{page.title}</Typography>
-                                </MenuItem>
-                            ))}
+                            {/*<div className={"bg-green-400 flex-1 flex-col items-center justify-center w-full"}>*/}
+                                {pages.map((page) => (
+                                    <MenuItem key={page.title} onClick={() => {
+                                        navigate(page.href);
+                                        handleCloseNavMenu()
+                                    }}>
+                                        <Typography textAlign="center">{page.title}</Typography>
+                                    </MenuItem>
+                                ))}
+                            {/*</div>*/}
                         </Menu>
                     </Box>
                     <AdbIcon sx={{display: {xs: 'flex', md: 'none'}, mr: 1}}/>
@@ -131,7 +133,7 @@ function Navbar() {
                             textDecoration: 'none',
                         }}
                     >
-                        SODA Wiki
+                        CodeBytez
                     </Typography>
                     <Box sx={{flexGrow: 1, display: {xs: 'none', md: 'flex'}}}>
                         {pages.map((page) => (
