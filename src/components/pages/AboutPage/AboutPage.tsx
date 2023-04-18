@@ -34,17 +34,17 @@ export default function AboutPage() {
                         <div className="grid lg:grid-cols-4 sm:grid-cols-2 xs:grid-cols-1 gap-8 h-fit pt-12 pb-12">
                             <ProfileCard
                                 title="Sascha Zesty🏳‍🌈 Buthelezi"
-                                image="/image/saschaw.png"
+                                image="/image/about/saschaw.png"
                             />
                             <ProfileCard
                                 title="💣liver Yngve Akbar Petterss💣n"
-                                image="/image/oliverw.png"
+                                image="/image/about/oliverw.png"
                             />
                             <ProfileCard
                                 title="Davide Leandro Marcoli"
-                                image="/image/davidew.png"
+                                image="/image/about/davidew.png"
                             />
-                            <ProfileCard title="Andrin Klarer" image="/image/andrinw.png"/>
+                            <ProfileCard title="Andrin Klarer" image="/image/about/andrinw.png"/>
                         </div>
                     </div>
                 </div>
