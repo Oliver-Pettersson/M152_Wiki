@@ -3,3 +3,9 @@
     position: relative;
     left: calc(-50vw + 50%);
 }
+
+.point {
+    background-color: #62DB44;
+    width: 20vw;
+    height: 20px;
+}
