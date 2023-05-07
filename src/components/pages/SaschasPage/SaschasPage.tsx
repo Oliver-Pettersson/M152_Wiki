@@ -54,7 +54,7 @@ function SaschasPage() {
                     </Typography>
                 </div>
 
-                <img src={"image/videos/ai/SS-1.png"} width="500" height="300" alt="Storyboard sketches" />
+                <img src={"/image/videos/ai/SS-1.png"} width="500" height="300" alt="Storyboard sketches" />
 
                 <div className="divider"></div>
 
