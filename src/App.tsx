@@ -7,6 +7,7 @@ import VideoPage from "./components/pages/VideoPage/VideoPage";
 import SoftwareLibraryPage from "./components/pages/SoftwareLibraryPage/SoftwareLibraryPage";
 import VideoDetail from "./components/organisms/VideoDetail/VideoDetail";
 import MediaCodexPage from "./components/pages/MediaCodexPage/MediaCodexPage";
+import SaschasPage from "./components/pages/SaschasPage/SaschasPage";
 
 function App() {
     return (
@@ -19,6 +20,8 @@ function App() {
                     <Route path="/software-library" element={<SoftwareLibraryPage/>}/>
                     <Route path="/videos" element={<VideoDetail/>}/>
                     <Route path="/media-codex" element={<MediaCodexPage/>}/>
+                    {/* Learn video pages below */}
+                    <Route path="/ai-learning" element={<SaschasPage/>}/>
                 </Routes>
             </BrowserRouter>
         </div>
