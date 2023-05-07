@@ -23,7 +23,7 @@ const VideoZone = () => {
                     path="/videos/react"
                 />
                 <VideoCard
-                    img="https://www.youtube.com/embed/rf8YebDBcbY"
+                    img="https://www.youtube.com/embed/TcJ0xQpQTzg"
                     desc={"Supervised Learning VS Unsupervised Learning"}
                     path="/videos/ai"
                 />

@@ -12,19 +12,6 @@ function Footer() {
     return (
         <>
             <div className="footer-wrapper">
-                <div className=" grid grid-rows-1 grid-flow-col">
-                    <div className="row-span-1 col-span-2">
-                        <p className="call-to-action-title">Sign up to our newsletter</p>
-                        <p className="call-to-action-text">Stay up to date with the latest news, announcements, and
-                            articles.</p>
-                    </div>
-
-                    <div className="input row-span-1 col-span-3">
-                        <TextField id="outlined-basic" label="Enter your email" variant="outlined"/>
-                        <button className="submit-button">Submit</button>
-                    </div>
-                </div>
-
                 <div className="links">
                     <div className="columns">
                         <Typography variant="h3">Legal</Typography>

@@ -1,5 +1,6 @@
 import React from "react";
 import {Typography, useTheme} from "@mui/material";
+import "./SoftwareLibraryCard.css"
 
 interface SoftwareLibraryCardProps {
     text: string;
@@ -31,9 +32,10 @@ export default function SoftwareLibraryCard({
     }
     return (
         <>
+
             <div
-                className="hidden lg:block w-full rounded-l-full rounded-r-full"
-                style={{background: darkmode ? "#788AA3" : "#9CD08F"}}
+                className="individual-card hidden lg:block w-full rounded-l-full rounded-r-full"
+                style={{background: darkmode ? "#1B221C" : "#9CD08F"}}
             >
                 <div className="flex flex-row">
                     {imageDirection === "left" ? (
