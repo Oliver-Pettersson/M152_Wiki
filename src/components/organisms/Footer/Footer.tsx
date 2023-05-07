@@ -1,4 +1,4 @@
-import {TextField} from '@mui/material'
+import {TextField, Typography} from '@mui/material'
 import React from 'react'
 import "./Footer.css"
 
@@ -27,66 +27,14 @@ function Footer() {
 
                 <div className="links">
                     <div className="columns">
-                        Logo
-                    </div>
-
-                    <div className="columns">
-                        <p className="column-header">Product</p>
-                        <ul className="a-ref">
-                            <li><a href="src/components/organisms/Footer">Overview</a></li>
-                            <li><a href="src/components/organisms/Footer">Features</a></li>
-                            <li><a href="src/components/organisms/Footer">Solutions</a></li>
-                            <li><a href="src/components/organisms/Footer">Tutorials</a></li>
-                            <li><a href="src/components/organisms/Footer">Pricing</a></li>
-                            <li><a href="src/components/organisms/Footer">Releases</a></li>
-
-                        </ul>
-                    </div>
-
-                    <div className="columns">
-                        <p className="column-header">Company</p>
-                        <ul className="a-ref">
-                            <li><a href="src/components/organisms/Footer">About us</a></li>
-                            <li><a href="src/components/organisms/Footer">Careers</a></li>
-                            <li><a href="src/components/organisms/Footer">Press</a></li>
-                            <li><a href="src/components/organisms/Footer">News</a></li>
-                            <li><a href="src/components/organisms/Footer">Media kit</a></li>
-                            <li><a href="src/components/organisms/Footer">Contact</a></li>
-                        </ul>
-                    </div>
-
-                    <div className="columns">
-                        <p className="column-header">Ressources</p>
-                        <ul className="a-ref">
-                            <li><a href="src/components/organisms/Footer">Blog</a></li>
-                            <li><a href="src/components/organisms/Footer">Newsletter</a></li>
-                            <li><a href="src/components/organisms/Footer">Events</a></li>
-                            <li><a href="src/components/organisms/Footer">Help centre</a></li>
-                            <li><a href="src/components/organisms/Footer">Tutorials</a></li>
-                            <li><a href="src/components/organisms/Footer">Support</a></li>
-                        </ul>
-                    </div>
-
-                    <div className="columns">
-                        <p className="column-header">Social</p>
-                        <ul className="a-ref">
-                            <li><a href="src/components/organisms/Footer">Facebook</a></li>
-                            <li><a href="src/components/organisms/Footer">Twitter</a></li>
-                            <li><a href="src/components/organisms/Footer">LinkedIn</a></li>
-                            <li><a href="src/components/organisms/Footer">Github</a></li>
-                        </ul>
-                    </div>
-
-                    <div className="columns">
-                        <p className="column-header">Legal</p>
-                        <ul className="a-ref">
-                            <li><a href="src/components/organisms/Footer">Terms</a></li>
-                            <li><a href="src/components/organisms/Footer">Privacy</a></li>
-                            <li><a href="src/components/organisms/Footer">Cookies</a></li>
-                            <li><a href="src/components/organisms/Footer">Licenses</a></li>
-                            <li><a href="src/components/organisms/Footer">Settings</a></li>
-                            <li><a href="src/components/organisms/Footer">Contact</a></li>
-                        </ul>
+                        <Typography variant="h3">Legal</Typography>
+                        <div>
+                            <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+                                <img className="" alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
+                            </a>
+                            <br />
+                            This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+                        </div>
                     </div>
 
                 </div>

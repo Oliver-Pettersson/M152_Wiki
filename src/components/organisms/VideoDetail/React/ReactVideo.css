@@ -13,7 +13,7 @@
     margin-top: 7vw;
 }
 
-.point {
+.react-line {
     background-color: #61DBFB;
     width: 20vw;
     height: 20px;
@@ -25,7 +25,7 @@
 }
 
 .main-content {
-    background-color: #61DBFB;
+    background-color: dimgrey;
     padding: 1vw;
 }
 
@@ -40,7 +40,28 @@
     font-size: 30px;
 }
 
-.divider {
+@media only screen and (max-width: 1024px) {
+    .react-video {
+        border-right: none;
+        justify-content: center;
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .react-video {
+        border-right: top;
+        justify-content: center;
+        display: flex;
+
+    }
+    .react-video iframe {
+        transform: translateX(-10px);
+    }
+}
+
+
+.react-divider {
     background-color: #61DBFB;
     width: 90%;
     height: 2px;
