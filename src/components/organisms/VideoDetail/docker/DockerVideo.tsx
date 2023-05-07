@@ -35,14 +35,6 @@ function DockerVideo() {
                 </div>
 
                 <div className="main-content grid lg:grid-cols-2 md:grid-cols-1 ">
-                    {/*<iframe*/}
-                    {/*    className="video-thumbnail row-span-2 col-span-2"*/}
-                    {/*    src={`https://www.youtube.com/embed/rf8YebDBcbY`}*/}
-                    {/*    frameBorder="0"*/}
-                    {/*    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"*/}
-                    {/*    allowFullScreen*/}
-                    {/*    title="Embedded youtube"*/}
-                    {/*/>*/}
                     <iframe src="https://www.youtube.com/embed/eneyVL3VL48"
                             className="video-thumbnail"
                             title="Einführung in Docker" frameBorder="0"
