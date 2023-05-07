@@ -73,7 +73,7 @@ export default function Carousel() {
                     <iframe
                         className="card-img"
                         onClick={() => setActiveImage(1)}
-                        src="https://www.youtube.com/embed/rf8YebDBcbY"
+                        src="https://www.youtube.com/embed/eneyVL3VL48"
                     />
                 </label>
                 <label className="card" id="song-2">
@@ -82,7 +82,7 @@ export default function Carousel() {
                     <iframe
                         className="card-img"
                         onClick={() => setActiveImage(2)}
-                        src="https://www.youtube.com/embed/rf8YebDBcbY"
+                        src="https://www.youtube.com/embed/KLP_Fk_aJYc"
                     />
                 </label>
                 <label className="card" id="song-3">
