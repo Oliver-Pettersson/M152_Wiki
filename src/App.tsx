@@ -8,6 +8,7 @@ import SoftwareLibraryPage from "./components/pages/SoftwareLibraryPage/Software
 import MediaCodexPage from "./components/pages/MediaCodexPage/MediaCodexPage";
 import DockerVideo from "./components/organisms/VideoDetail/docker/DockerVideo";
 import SEOPage from "./components/organisms/VideoDetail/SEO/SEOPage";
+import ReactVideo from "./components/organisms/VideoDetail/React/ReactVideo";
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                     <Route path="/software-library" element={<SoftwareLibraryPage/>}/>
                     <Route path="/videos/docker" element={<DockerVideo/>}/>
                     <Route path="/videos/seo" element={<SEOPage/>}/>
+                    <Route path="/videos/react" element={<ReactVideo/>}/>
                     <Route path="/media-codex" element={<MediaCodexPage/>}/>
                 </Routes>
             </BrowserRouter>

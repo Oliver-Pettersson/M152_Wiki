@@ -18,9 +18,9 @@ const VideoZone = () => {
                     path="/videos/docker"
                 />
                 <VideoCard
-                    img="https://www.youtube.com/embed/rf8YebDBcbY"
-                    desc={"OKIDOKI"}
-                    path="/"
+                    img="https://www.youtube.com/embed/9smQ2q7KPOA"
+                    desc={"Einführung in React"}
+                    path="/videos/react"
                 />
                 <VideoCard
                     img="https://www.youtube.com/embed/rf8YebDBcbY"
