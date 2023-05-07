@@ -66,7 +66,7 @@ function SEOPage() {
           </div>
         </div>
 
-        <div className="divider"></div>
+        <div className="seo-divider"></div>
 
         {/* Story boards below  */}
         <Fade left>
@@ -85,7 +85,7 @@ function SEOPage() {
           height="800px"
         ></object>
 
-        <div className="divider"></div>
+        <div className="seo-divider"></div>
         <div className="storyboard-title-wrapper">
           <Typography variant="h3">Story Board</Typography>
         </div>
@@ -96,6 +96,8 @@ function SEOPage() {
           height="800px"
         ></object>
       </div>
+      <div className="seo-divider"></div>
+
     </AnimatedPage>
   );
 }

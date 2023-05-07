@@ -30,7 +30,7 @@ function Footer() {
 
                 <div className="under-section grid grid-rows-1 grid-flow-col">
                     <div>
-                        <p className="copyright-text row-span-1 col-span-2">© 2044 Untitled Company. All rights
+                        <p className="copyright-text row-span-1 col-span-2">© 2023 CodeBytez. All rights
                             reserved.</p>
                     </div>
 
