@@ -6,7 +6,7 @@ export default function VideoPage() {
     <>
       <Carousel />
       <VideoZone/>
-      <img width={"200px"} src="/image/illustrations/undraw_landscape_photographer_5nvi.svg"/>
+      <br/>
     </>
   )
 }
