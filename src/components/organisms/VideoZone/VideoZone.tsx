@@ -24,8 +24,8 @@ const VideoZone = () => {
                 />
                 <VideoCard
                     img="https://www.youtube.com/embed/rf8YebDBcbY"
-                    desc={"OKIDOKI"}
-                    path="/"
+                    desc={"Supervised Learning VS Unsupervised Learning"}
+                    path="/videos/ai"
                 />
             </div>
         </>
