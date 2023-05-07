@@ -1,0 +1,12 @@
+.individual-card {
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+    transition: transform 0.4s, -webkit-transform 0.4s;
+    margin-bottom: 1em;
+}
+
+.individual-card:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
