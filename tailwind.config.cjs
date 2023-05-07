@@ -18,7 +18,7 @@ module.exports = {
                     },
                     dark: {
                         1: '#121212',
-                        2: '#272727',
+                        2: '#202020',
                         scrollbarTrack: '#121212',
                         scrollbarThumb: '#788AA3',
                         scrollbarThumbHover: '#555',

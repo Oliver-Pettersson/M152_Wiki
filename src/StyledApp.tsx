@@ -29,6 +29,8 @@ function StyledApp() {
 
 export default function ToggleColorMode() {
     const [mode, setMode] = React.useState<'light' | 'dark'>('dark')
+    document.documentElement.classList.add('dark')
+
     const colorMode = React.useMemo(
         () => ({
             toggleColorMode: () => {
