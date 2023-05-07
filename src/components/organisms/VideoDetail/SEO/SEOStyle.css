@@ -9,11 +9,12 @@
     height: 10px;
 }
 
-.main-content {
-    background-color: #34a853 !important;
+.seo-main-content {
+    background-color: #34a853;
     padding: 1vw;
 
 }
+
 .seo-divider {
     width: 90%;
     margin-top: 4vw;
@@ -58,7 +59,7 @@
 }
 
 
-.main-content .video-thumbnail-description {
+.seo-main-content .video-thumbnail-description {
     padding-left: 5%;
     align-self: center;
     text-align: left;

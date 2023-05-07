@@ -41,7 +41,7 @@ function SEOPage() {
           </p>
         </div>
 
-        <div className="main-content grid lg:grid-cols-2 md:grid-cols-1 ">
+        <div className="seo-main-content grid lg:grid-cols-2 md:grid-cols-1 ">
           <div className="video">
             <iframe
               className="video-thumbnail "
