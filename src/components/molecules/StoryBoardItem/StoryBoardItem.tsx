@@ -20,7 +20,7 @@ function StoryBoardItem({
                         <div className="flex-row flex">
                             <img className="mr-auto" width="500" height="300"
                                  src={imageSrc}/>
-                            <div className="m-4">
+                            <div className="m-4 text-2xl">
                                 {text}
                             </div>
                         </div>
@@ -31,7 +31,7 @@ function StoryBoardItem({
                 {!isOnLeftSide &&
                     <>
                         <div className="flex-row flex">
-                            <div className="m-4">
+                            <div className="m-4 text-2xl">
                                 {text}
                             </div>
                             <img className="ml-auto" width="500" height="300"

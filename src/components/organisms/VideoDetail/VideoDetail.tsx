@@ -18,19 +18,20 @@ function VideoDetail() {
 
     return (
         <AnimatedPage>
-            <SEOPage/>
-            <Canvas frameloop="demand"
-                    shadows
-                    camera={{position: [30, 3, 5], fov: 25}}
-                    gl={{preserveDrawingBuffer: true}}>
-                {!isMounted ? null : (
-                    <Suspense fallback={null}>
-                        <OrbitControls enableZoom={false} enablePan={true}/>
-                        <LazyModel/>
-                    </Suspense>)
-                }
-                <Preload all/>
-            </Canvas>
+            <DockerVideo/>
+            {/*<SEOPage/>*/}
+            {/*<Canvas frameloop="demand"*/}
+            {/*        shadows*/}
+            {/*        camera={{position: [30, 3, 5], fov: 25}}*/}
+            {/*        gl={{preserveDrawingBuffer: true}}>*/}
+            {/*    {!isMounted ? null : (*/}
+            {/*        <Suspense fallback={null}>*/}
+            {/*            <OrbitControls enableZoom={false} enablePan={true}/>*/}
+            {/*            <LazyModel/>*/}
+            {/*        </Suspense>)*/}
+            {/*    }*/}
+            {/*    <Preload all/>*/}
+            {/*</Canvas>*/}
         </AnimatedPage>
     )
 }
