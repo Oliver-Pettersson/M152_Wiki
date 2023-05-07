@@ -1,5 +1,5 @@
 .footer-wrapper {
-    background-color: #9CD08F;
+    background-color: #1B221C;
     flex: 1;
     padding-left: 2vw;
     padding-right: 2vw;
@@ -29,6 +29,7 @@
 .submit-button {
     margin-left: 20px;
     height: 7.5vh;
+    background-color: #8DC97E;
 }
 
 .links {

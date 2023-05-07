@@ -8,6 +8,7 @@ import SoftwareLibraryPage from "./components/pages/SoftwareLibraryPage/Software
 import VideoDetail from "./components/organisms/VideoDetail/VideoDetail";
 import MediaCodexPage from "./components/pages/MediaCodexPage/MediaCodexPage";
 import SaschasPage from "./components/pages/SaschasPage/SaschasPage";
+import Footer from "./components/organisms/Footer/Footer";
 
 function App() {
     return (
@@ -23,6 +24,7 @@ function App() {
                     {/* Learn video pages below */}
                     <Route path="/ai-learning" element={<SaschasPage/>}/>
                 </Routes>
+                <Footer/>
             </BrowserRouter>
         </div>
     );
