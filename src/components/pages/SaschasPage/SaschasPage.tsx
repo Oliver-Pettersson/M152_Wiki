@@ -28,9 +28,14 @@ function SaschasPage() {
                 </div>
                 
                 <div className="main-content">
-                    <video className="video-thumbnail" controls >
-                        <source src="src\components\pages\SaschasPage\M152_Buthelezi_Sascha_FINISHED.mp4" type="video/mp4"/>
-                    </video>
+                    <iframe
+                        className="video-thumbnail"
+                        src="https://www.youtube.com/embed/TcJ0xQpQTzg"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        title="Embedded youtube"
+                    />
                 </div>
 
                 <div className="divider"></div>
