@@ -1,9 +1,10 @@
 import {Typography} from "@mui/material";
 import Fade from 'react-reveal/Fade';
 
-import StoryBoardItem from "../../../StoryBoardItem";
+import StoryBoardItem from "../../../molecules/StoryBoardItem/StoryBoardItem";
 import "./VideoPage_template.css";
 import AnimatedPage from "../../AnimatedPage";
+// @ts-ignore
 import {useLoader} from "react-three"
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader'
 import React from "react";
@@ -57,11 +58,11 @@ function VideoDetail() {
                     <Typography variant="h3">Story Board</Typography>
                 </div>
 
-                <div>
-                    <StoryBoardItem isOnLeftSide={true}/>
-                    <StoryBoardItem isOnLeftSide={false}/>
-                    <StoryBoardItem isOnLeftSide={true}/>
-                </div>
+                {/*<div>*/}
+                {/*    <StoryBoardItem isOnLeftSide={true}/>*/}
+                {/*    <StoryBoardItem isOnLeftSide={false}/>*/}
+                {/*    <StoryBoardItem isOnLeftSide={true}/>*/}
+                {/*</div>*/}
 
                 <div className="divider"></div>
             </div>
