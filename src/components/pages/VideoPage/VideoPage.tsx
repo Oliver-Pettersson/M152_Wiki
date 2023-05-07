@@ -2,7 +2,9 @@ import Carousel from '../../organisms/Carousel/Carousel'
 import VideoZone from '../../organisms/VideoZone/VideoZone'
 
 import { Canvas, useFrame } from '@react-three/fiber'
-import {useEffect, useRef, useState} from "react";
+import React, {Suspense, useEffect, useRef, useState} from "react";
+import {OrbitControls, Preload} from "@react-three/drei";
+import Model from "../../../../public/model/3d_objects";
 
 function Box(props: any) {
     // This reference gives us direct access to the THREE.Mesh object
@@ -41,6 +43,18 @@ export default function VideoPage() {
             <pointLight position={[10, 10, 10]} />
             <Box position={[-1.2, 0, 0]} />
             <Box position={[1.2, 0, 0]} />
+        </Canvas>
+        <Canvas frameloop="demand"
+                shadows
+                camera={{position: [20, 3, 5], fov: 25}}
+                gl={{ preserveDrawingBuffer: true}}>
+            <Suspense fallback={null}>
+                <OrbitControls enableZoom={false}
+                               maxPolarAngle={Math.PI / 2}
+                               minPolarAngle={Math.PI / 2}/>
+                <Model/>
+            </Suspense>
+            <Preload all />
         </Canvas>
       <VideoZone/>
     </>
