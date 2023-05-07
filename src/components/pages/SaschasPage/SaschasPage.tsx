@@ -29,7 +29,7 @@ function SaschasPage() {
                 
                 <div className="main-content">
                     <video className="video-thumbnail" controls >
-                        <source src="src\components\pages\SaschasPage\Learnvideo_m122.mp4" type="video/mp4"/>
+                        <source src="src\components\pages\SaschasPage\M152_Buthelezi_Sascha_FINISHED.mp4" type="video/mp4"/>
                     </video>
                 </div>
 
@@ -41,7 +41,12 @@ function SaschasPage() {
                 </div>
 
                 <div className="storyboard-content">
-                    <Typography variant="h5">Started of with searching for Video ideas. I was really interested in the AI Uek I had. Especially I wanted to tackle a more theoretical topic which I would need to explain, rather than demo. After two brainstorming sessions I decided to cover the topic of Machine learning. Specifically Supervised and Unsupervised Learning.</Typography>
+                    <Typography variant="h5">
+                        Started of with searching for Video ideas. I was really interested in the AI Uek I had. 
+                        Especially I wanted to tackle a more theoretical topic which I would need to explain, 
+                        rather than demo. After two brainstorming sessions I decided to cover the topic of Machine 
+                        learning. Specifically Supervised and Unsupervised Learning.
+                    </Typography>
                 </div>
 
                 <div className="divider"></div>
