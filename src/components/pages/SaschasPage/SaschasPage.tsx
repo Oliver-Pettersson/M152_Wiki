@@ -54,8 +54,20 @@ function SaschasPage() {
                     </Typography>
                 </div>
 
+                <img src={"image/videos/ai/SS-1.png"} width="500" height="300" alt="Storyboard sketches" />
+
                 <div className="divider"></div>
-                {/*  Content here */}
+
+                <div className="storyboard-content">
+                    <Typography variant="h5">
+                        Started of with searching for Video ideas. I was really interested in the AI Uek I had. 
+                        Especially I wanted to tackle a more theoretical topic which I would need to explain, 
+                        rather than demo. After two brainstorming sessions I decided to cover the topic of Machine 
+                        learning. Specifically Supervised and Unsupervised Learning.
+                    </Typography>
+                </div>
+
+                <div className="divider"></div>
             </div>
         </AnimatedPage>
     )
