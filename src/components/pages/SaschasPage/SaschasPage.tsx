@@ -60,10 +60,12 @@ function SaschasPage() {
 
                 <div className="storyboard-content">
                     <Typography variant="h5">
-                        Started of with searching for Video ideas. I was really interested in the AI Uek I had. 
-                        Especially I wanted to tackle a more theoretical topic which I would need to explain, 
-                        rather than demo. After two brainstorming sessions I decided to cover the topic of Machine 
-                        learning. Specifically Supervised and Unsupervised Learning.
+                        After coming up with a simple storyboard and sketch and writing it out clearer, I then had to search for some resources.
+                        This included music, graphics and specifically what tool I would use to edit the video. It was important to make sure to use royalty free music and non-copyrighted elements.
+                        <br/>
+                        <br/>
+                        I got my music from <a href="https://pixabay.com/users/comastudio-26079283/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=142819">ComaStudio</a> from <a href="https://pixabay.com/music//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=142819">Pixabay</a>. 
+                        I added the attribution, cause I really liked the artits mix. The attribution wasn't mandatory but it just feels right giving them their praise. For the actual audio production I mainly used Soundtrap. Specifically for recording the voice over and tuning any sound quality issues that arose. I also manually edited the back-intrack song in my Video editor <strong>Filmora Wondershare</strong>.
                     </Typography>
                 </div>
 
