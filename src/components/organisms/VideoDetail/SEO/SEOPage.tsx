@@ -16,10 +16,10 @@ function SEOPage() {
 
   return (
     <AnimatedPage>
-      <div className="page-container w-full">
+      <div className="page-container seo-page-container w-full">
         <div className="title-wrapper">
           <Fade right>
-            <Typography variant="h1" className="title">
+            <Typography variant="h1" className="title seo-title">
               Search Engine Optimization
             </Typography>
             <div className="seo-line" />

@@ -9,7 +9,7 @@ const VideoZone = () => {
             >
                 <VideoCard
                     img="https://www.youtube.com/embed/KLP_Fk_aJYc"
-                    desc={"Search Eingine Optimization"}
+                    desc={"Search Engine Optimization"}
                     path="/videos/seo"
                 />
                 <VideoCard
